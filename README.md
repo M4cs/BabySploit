@@ -54,7 +54,7 @@ from any experience level will find use out of BabySploit. Below are some screen
 
   - BlackEye Python
   
-### Crypto/Steno:
+### Crypto/Stegano:
 
   - MetaKiller
   
