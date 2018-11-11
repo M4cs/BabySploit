@@ -1,8 +1,7 @@
 def welcome():
-    import socket
-    from pyfiglet import Figlet
-    f = Figlet(font="slant")
-    print(f.renderText(" BabySploit"))
+    import socket, requests
+    teddy = requests.get("https://hastebin.com/raw/oyifedagib").text
+    print(teddy)
     banner = """
               Welcome to BabySploit!
             Developed by @maxbridgland
