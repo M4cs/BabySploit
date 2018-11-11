@@ -9,6 +9,8 @@
 [![GitHub issues](https://img.shields.io/github/issues/M4cs/BabySploit.svg)](https://github.com/M4cs/BabySploit/issues)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/M4cs/BabySploit.svg?style=popout)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FM4cs%2FBabySploit)
 
+Tested on Kali Linux. Should work with all Debian based distros (and other ones if you have the right packages installed)
+
 BabySploit is a penetration testing framework aimed at making it easy to learn how to use bigger, 
 more complicated frameworks like Metasploit. With a very easy to use UI and toolkit, anybody
 from any experience level will find use out of BabySploit. Below are some screenshots of the framework.
