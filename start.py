@@ -1,13 +1,7 @@
 #!/usr/bin/env python3
 # Import Modules #
 from configparser import ConfigParser
-from babysploit import configuration
-from babysploit import display
-from babysploit import helper
-from babysploit import searchsploit
-from babysploit import iplookup
-from babysploit import nmap
-from babysploit import reverseshell
+from babysploit import display, configuration, dnslookup, helper, iplookup, nmap, reverseshell, searchsploit, tcpdump
 import os
 
 try:
@@ -70,8 +64,16 @@ try:
             term()
         elif terminal[0:4] == "nmap":
             nmap.run()
+            term()
         elif terminal[0:12] == "reverseshell":
-            reverseshell.run()  
+            reverseshell.run()
+            term()
+        elif terminal[0:12] == "censyslookup":
+            censyslookup.start()
+            term()
+        elif terminal[0:9] == "dnslookup":
+            dnslookup.start()
+            term()
         else:
             print("Unknown Command")
             term()

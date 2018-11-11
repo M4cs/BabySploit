@@ -21,7 +21,8 @@ def tools():
       ['\nTool', '\nDescription'],
       ['nmap', 'nmap port scanner tool'],
       ['iplookup', 'ip info tool'],
-      ['tcpdump', 'tcpdump plugin']
+      ['dnslookup', 'dns lookup tool'],
+      ['censyslookup', 'censys api lookup | req api creds']
     ]
     table = SingleTable(infotable, "Information Gathering")
     print("")
