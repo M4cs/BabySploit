@@ -84,6 +84,8 @@ into BabySploit. Ex: `ftpbruteforce` - runs the ftpbruteforce tool.
 
 # Features (Current, In The Works, Planned):
 
+[Visit](https://github.com/M4cs/BabySploit/projects/1) project board for tools.
+
   - Information Gathering
   - Exploitation
   - Post Exploitation
