@@ -48,7 +48,7 @@ from any experience level will find use out of BabySploit. Below are some screen
   
 ### Bruteforcing:
 
-  - In The Works
+  - FTP Bruteforcer
   
 ### Phishing:
 
@@ -56,7 +56,7 @@ from any experience level will find use out of BabySploit. Below are some screen
   
 ### Crypto/Steno:
 
-  - MetaKiller (In The Works)
+  - MetaKiller
   
 # Contributing
 

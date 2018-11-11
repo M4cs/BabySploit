@@ -1,7 +1,10 @@
 def welcome():
     import socket, requests
-    teddy = requests.get("https://hastebin.com/raw/oyifedagib").text
-    print(teddy)
+    try:
+      teddy = requests.get("https://hastebin.com/raw/oyifedagib", timeout=3).text
+      print(teddy)
+    except requests.exceptions.ReadTimeout:
+      pass
     banner = """
               Welcome to BabySploit!
             Developed by @maxbridgland
@@ -41,5 +44,19 @@ def tools():
       ['blackeye', 'BlackEye Phish Kit']
     ]
     phishtable = SingleTable(phishingtable, "Phishing")
+    print("")
     print(phishtable.table)
     print("")
+    bruteforcetable = [
+      ['\nTool', '\nDescription'],
+      ['ftpbruteforce', 'ftp brute force tool']
+    ]
+    cryptotable = [
+      ['\nTool', '\nDescription'],
+      ['metakiller', 'grab metadata of an image'],
+    ]
+    cryptable = SingleTable(cryptotable, "Cryptography/Stenography")
+    bftable = SingleTable(bruteforcetable, "Bruteforcing")
+    print(cryptable.table)
+    print("")
+    print(bftable.table)

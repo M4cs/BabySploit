@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Import Modules #
 from configparser import ConfigParser
-from babysploit import display, configuration, dnslookup, helper, iplookup, nmap, reverseshell, searchsploit, tcpdump, censyslookup, blackeye
+from babysploit import display, configuration, dnslookup, helper, iplookup, nmap, reverseshell, searchsploit, tcpdump, censyslookup, blackeye, metakiller, ftpbruteforce
 import os
 
 try:
@@ -76,6 +76,12 @@ try:
             term()
         elif terminal[0:8] == "blackeye":
             blackeye.run()
+            term()
+        elif terminal[0:10] == "metakiller":
+            metakiller.run()
+            term()
+        elif terminal[0:13] == "ftpbruteforce":
+            ftpbruteforce.start()
         else:
             print("Unknown Command")
             term()

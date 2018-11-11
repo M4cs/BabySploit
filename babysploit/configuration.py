@@ -12,7 +12,7 @@ def createuser():
         'rport': '80',
         'platform': '',
         'usernamelist': 'lists/users',
-        'passwordlist': 'lists/pass',
+        'passwordlist': 'lists/pass/rockyou.txt',
         'urlpath': '/connect'
     }
     config['DEFAULT']['platform'] = "%s %s" % (system, release)
@@ -24,5 +24,5 @@ def checkuser():
         print("          [i] Loaded Configuration... [i]")
     else:
         createuser()
-        print("       [i] Created New Configuration File... [i]")
+        print("     [i] Created New Configuration File... [i]")
 
