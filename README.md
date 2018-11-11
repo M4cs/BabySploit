@@ -8,8 +8,11 @@
 [![GitHub license](https://img.shields.io/github/license/M4cs/BabySploit.svg)](https://github.com/M4cs/BabySploit/blob/master/LICENSE.md)
 [![GitHub issues](https://img.shields.io/github/issues/M4cs/BabySploit.svg)](https://github.com/M4cs/BabySploit/issues)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/M4cs/BabySploit.svg?style=popout)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FM4cs%2FBabySploit)
+[![Discord](https://img.shields.io/badge/discord-join-blue.svg?syle=popout)](https://discord.gg/7VN9VZe)
 
 Tested on Kali Linux. Should work with all Debian based distros (and other ones if you have the right packages installed)
+
+Join the Discord For Support: https://discord.gg/7VN9VZe
 
 BabySploit is a penetration testing framework aimed at making it easy to learn how to use bigger, 
 more complicated frameworks like Metasploit. With a very easy to use UI and toolkit, anybody
