@@ -74,10 +74,10 @@ until you use the `reset` command which resets the saved configuration.
 
 In order to run a tool all you have to do is enter the name of the tool into BabySploit. You can use the `tools` command
 to display a menu with all the currently availble tools. If we run tools we get the depiction:
-<p align-"center">
+<p align="center">
   <img src="https://image.prntscr.com/image/S-BrY0paRcGoliP1NPg5fA.png" alt="Tools"/>
 </p>
-**this depiction may be outdated**
+*this depiction may be outdated*
 
 This menu will display the tools available and the description of each tool. To run a tool simply enter the tool name
 into BabySploit. Ex: `ftpbruteforce` - runs the ftpbruteforce tool.
