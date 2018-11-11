@@ -24,6 +24,7 @@ from any experience level will find use out of BabySploit. Below are some screen
   - Post Exploitation
   - Bruteforcing
   - Phishing
+  - Cryptography/Stenography
  
 ### Information Gathering:
 
@@ -50,6 +51,10 @@ from any experience level will find use out of BabySploit. Below are some screen
 ### Phishing:
 
   - BlackEye Python
+  
+### Crypto/Steno:
+
+  - MetaKiller (In The Works)
   
 # Contributing
 
