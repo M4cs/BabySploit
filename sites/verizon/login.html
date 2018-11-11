@@ -1,0 +1,550 @@
+<!-- moved property from LoginContent.jsp, to allow parametermization of loginContent.jsp -->
+<!-- setting  property for LoginContent.jsp, to allow parametermization of loginContent.jsp -->
+<!DOCTYPE html>
+<html lang="en"><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Sign In</title>
+        <link rel="canonical" href="https://myverizonid.verizon.com/amserver/UI/Login">
+        <link rel="stylesheet" href="https://scache.vzw.com/am/css/bootstrap-3.3.7.min.css">
+        <link rel="stylesheet" href="https://scache.vzw.com/am/css/less-space.css">
+        <link rel="stylesheet" href="https://scache.vzw.com/am/css/style-2.0.css">
+
+    
+    
+        <link rel="stylesheet" href="https://scache.vzw.com/globalnav/css/globalnav-js.css?v=3">
+        <script src="https://scache.vzw.com/globalnav/scripts/vzw_jquery19.js"></script>
+        <script>
+            vzw_gnjq = jQuery;
+        </script>
+        <script src="https://scache.vzw.com/globalnav/gnav.js?v=3"></script>
+        <link rel="stylesheet" href="https://scache.vzw.com/globalnav/css/omnifooter.css">
+        <script src="https://scache.vzw.com/globalnav/omnifooter.js"></script>
+        <script type="text/javascript">
+            // Instructions: please embed this snippet directly into every page in your website template.
+            // For optimal performance, this must be embedded directly into the template, not referenced
+            // as an external file.
+            
+            // Answers Cloud Services Embed Script v1.02
+            // DO NOT MODIFY BELOW THIS LINE *****************************************
+            ;(function (g) {
+                var d = document, i, am = d.createElement('script'), h = d.head || d.getElementsByTagName("head")[0],
+                aex = {
+                    "src": "//gateway.answerscloud.com/verizonwireless/production/gateway.min.js",
+                    "type": "text/javascript",
+                    "async": "true",
+                    "data-vendor": "acs",
+                    "data-role": "gateway"
+                };
+                for (var attr in aex) { am.setAttribute(attr,aex[attr]); }
+                h.appendChild(am);
+                g['acsReady'] = function () {var aT = '__acsReady__', args = Array.prototype.slice.call(arguments, 0),k = setInterval(function () {if (typeof g[aT] === 'function') {clearInterval(k);for (i = 0; i < args.length; i++) {g[aT].call(g, function(fn) { return function() { setTimeout(fn, 1) };}(args[i]));}}}, 50);};
+            })(window);
+            // DO NOT MODIFY ABOVE THIS LINE *****************************************
+        </script><script src="//gateway.answerscloud.com/verizonwireless/production/gateway.min.js" type="text/javascript" async="true" data-vendor="acs" data-role="gateway"></script>
+        
+
+
+
+
+
+
+
+
+
+    
+
+        <script>
+            var $j = jQuery;
+        </script>
+         
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://scache.vzw.com/am/js/html5shiv-3.7.3.min.js"></script>
+        <script src="https://scache.vzw.com/am/js/respond-1.4.2.min.js"></script>
+        <![endif]-->
+        <script src="https://scache.vzw.com/am/js/bootstrap-3.3.7.min.js"></script>
+
+
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://scache.vzw.com/am/js/core.js"></script>
+        <script>
+            var fromVZTsession = 'Y';
+            var fromVZTparam = '';
+            var fromVZT = fromVZTparam || fromVZTsession;
+            var mode = '';
+            var overlayAfterSubmit = false;
+            var offerShortLivedPassword = '';
+            // already in overlay mode.. external links go to full screen
+            var inOverlay = (mode == 'o');
+            var inInline = (mode == 'i');
+            var isOfferShortLivedPassword = (offerShortLivedPassword == 'Y');
+
+            $j(document).ready(function() {
+                if (inInline) {
+                    if (!overlayAfterSubmit) {
+                        $j('#login-form').attr('target', '_top');
+                    }
+                }
+                $j('#sharedComputerTooltip').tooltip({
+                    container: '#main-content'
+                });
+
+                var submitPageTag = 'sign in';
+                $j('#login-form').submit(function(e){
+                    $j('#login-submit').prop('disabled', true);
+                    if (fromVZT == 'Y') {
+                        scLinkTrackID(submitPageTag);
+                    }
+                });
+
+                if (inOverlay || inInline) {
+                    $j('#main-content a:not(.not-full-screen)').attr('target', '_top');
+                } else {
+                    $j('#registerProfile').addClass('visible-xs-inline');
+                }
+
+                $j('#IDToken1').focus();
+
+                if(fromVZT != 'Y') {
+                    Core.registerPageTagClick('#registerProfile a,#registerProfile2', 'register');
+                    Core.registerPageTagClick('#login-submit', 'sign in');
+                    Core.registerPageTagClick('a#forgotPasswordLink', 'password');
+                    Core.registerPageTagClick('a.smartbanner-button', 'my verizon app banner:open');
+                } else {
+                    Core.registerVZTPageTagClick('#registerProfile a,#registerProfile2', 'register');
+                    Core.registerVZTPageTagClick('a#forgotPasswordLink', 'forgot your info');
+                }
+
+                if (fromVZT == 'Y') {
+                    $j('#rememberUserName').click(function(){
+                        if($j("#kmsi").is(':checked')) {
+                            $j('#kmsi').attr("checked", false);
+                        }
+                        submitPageTag = 'sign in-remember me';
+                    });
+
+                    $j('#kmsi').click(function(){
+                        if($j('#rememberUserName').is(':checked')) {
+                            $j('#rememberUserName').attr("checked", false);
+                        }
+                        submitPageTag = 'sign in-keep me';
+                    });
+                }
+            });
+        </script>
+
+
+
+
+
+    
+
+
+
+
+    
+    
+    
+    <script type="text/javascript">
+        window.digitalData = {
+            "page": {
+                "sysEnv":  "prod",
+                "adobeReportSuite":  "verizontelecomglobal,verizontelecomsso",
+                "language": "en_US",
+                "pfxID": "sso",
+                "pageName": "res| oaam| enter user id password",
+                "siteSection": "",
+                "events": "event1",
+                "detailPageName": "res| oaam| enter user id password",
+                "businessUnit": "residential",
+                "pageType": "sso signin",
+                "contentChannel": "/vz/residential/signin",
+                "lineOfBusiness": "residential",
+                "cmsPlatform": "sso| vzw",
+                "flowName": "signin",
+                "applicationName": "res desktop"
+            },
+            "userProfile": {
+                "verizonUID": ""
+            }
+        };
+    </script>
+    <script type="text/javascript" src="//assets.adobedtm.com/10d5272d092923c410feae744225087686012423/satelliteLib-8df7d93db820b272138ecb04dbe4ed7f5023b893.js"></script>
+
+
+
+    <script type="text/javascript" src="https://verizon.inq.com/chatskins/launch/inqChatLaunch10004593.js"></script></head>
+    
+    <body id="fullscreen-body" class="Desktop-device">
+
+
+
+    
+        
+            <!-- VZT import -->
+            
+
+
+
+
+
+
+
+<!-- UCM Thu Sep 03 02:03:15 EDT 2015 -->
+<!-- SCB header begin -->
+<script type="text/javascript">var master_cookie_on="Y";</script>
+<input id="currentDomain" value="https://www.verizon.com" type="hidden">
+<input id="currentDomainVZ" value="https://www.verizon.com" type="hidden">
+<script type="text/javascript">var scbType='rord';</script>
+<script type="text/javascript" src="//www.verizon.com/home/ak-cached/2h/javascript/commons.js"></script>
+<link href="https://www.verizon.com/home/ak-cached/2h/styles/common.css" rel="stylesheet" type="text/css">
+
+
+<!--googleoff: all-->
+<noindex>
+<script type="text/javascript" src="//www.verizon.com/includes/javascript/omnicode.js"></script>
+<div id="scbheadercont">
+	<div id="newscbheader">	
+		<a href="http://www.verizon.com/Support/Residential/Generic/Phone+Generic/Phone+Product/Questions/CustomersWithDisabilities.htm" name="&amp;lid=//ssohdr//disabilities" style="position:absolute;left:-9999px;top:-9999px;">Customers With Disabilities</a>
+	<a class="scbvzlogo" href="http://www.verizon.com/?lid=//global//residential" name="&amp;lid=//ssohdr//verizon logo"><img alt="" src="https://www.verizon.com/cs/groups/public/documents/adacct/vzlogo_lg.png" style="max-width:100%;" border="0"><span class="scbhidden">visit Verizon home page</span></a>
+	
+		<style type="text/css">
+#scbrestopnavlt{position:relative;top:0;left:175px;height:35px;width:260px;z-index:2000;}
+#scbrestopnavlt ul{margin:0;padding:0;list-style-type:none;list-style-image:none;}
+#scbrestopnavlt li{display:block;float:left;padding:0 10px;}
+#scbrestopnavlt li a.scbrestoplt{float:left;text-align:center;height:30px;line-height:30px;text-decoration:none;font-size:12px;color:#4b4b4b;font-weight:700;border-top:2px solid #fff;padding-top:7px;}
+#scbrestopnavlt li a.scbrestoplt:focus,
+#scbrestopnavlt li a.scbrestoplt:hover,
+#scbrestopnavlt li a.scbrestoplt:active{color:#cd040b !important;text-decoration:none;}
+#scbrestopnavlt li a.scbresselected{border-top:2px solid #cd040b;}</style>
+<div id="scbrestopnavlt">
+	<ul>
+		<li>
+			<a class="scbrestoplt" href="http://www.verizonwireless.com/" id="scbvzwtoplink" name="&amp;lid=//ssohdr//vzw">Wireless</a></li>
+		<li>
+			<a class="scbrestoplt scbresselected" href="http://www.verizon.com/?lid=//global//residential" id="scbminreslink" name="&amp;lid=//ssohdr//residential">Residential</a></li>
+		<li id="scbbiztab">
+			<a class="scbrestoplt" href="http://www.verizon.com/home/verizonglobalhome/ghp_business.aspx" id="scbminbizlink" name="&amp;lid=//ssohdr//business">Business</a></li>
+	</ul>
+</div>
+
+		<div id="scbuser" style="display:none;">
+	<div style="position:absolute;top:0;right:0;">
+<script type="text/javascript">
+		document.write('<a class="scbesp" href="http://'+vzEspanol+'/" mporgnav="" name="&amp;lid=//ssohdr//espanol" onclick="return switchLanguage(\'es\');function switchLanguage(lang){MP.SrcUrl=unescape(\'mp_js_orgin_url\');MP.UrlLang=\'mp_js_current_lang\';MP.init();MP.switchLanguage(MP.UrlLang==lang?\'en\':lang);return false;}">Espa&ntilde;ol <\/a>');
+	  </script><a class="scbesp" href="http://espanol.verizon.com/" mporgnav="" name="&amp;lid=//ssohdr//espanol" onclick="return switchLanguage('es');function switchLanguage(lang){MP.SrcUrl=unescape('mp_js_orgin_url');MP.UrlLang='mp_js_current_lang';MP.init();MP.switchLanguage(MP.UrlLang==lang?'en':lang);return false;}">Español </a>	</div>
+</div>
+<script type="text/javascript">
+if(typeof(scbSSOLOB)!='undefined' && scbSSOLOB!=''){
+	if(scbSSOLOB.toUpperCase()=='RES'){
+document.getElementById('scbminreslink').className=document.getElementById('scbminreslink').className+' scbresselected';
+document.getElementById('scbuser').style.display='block';
+}
+	else if(scbSSOLOB.toUpperCase()=='SMB'){document.getElementById('scbminbizlink').className=document.getElementById('scbminbizlink').className+' scbresselected';}
+
+}
+</script>		
+	</div>	
+</div>
+</noindex>
+<!--googleon: all-->
+<script type="text/javascript">
+//scbLoadJS('//www.verizon.com/home/commongh?ProcessClass=true&nocache='+Math.random());
+</script>
+<div id="ghfbodycont">
+	<div id="ghfbody" style="width:985px;"><a name="content"></a>
+		<div id="ghfbodycontent">
+			<div>
+<!-- SCB header end -->
+<!-- ************ End : Single Code Base Header ************ -->
+
+
+
+
+
+<input name="hf_sn" value="rtmscpw13" type="hidden">
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var residentialBusiness = false;
+            $j(document).ready(function() {
+                if (residentialBusiness) {
+                    $j('#scbminreslink').removeClass('scbresselected');
+                    $j('#scbminbizlink').addClass('scbresselected');
+                }
+                $j('#copyrightId').html('Verizon');
+            });
+        </script>
+        
+        
+    
+
+
+
+
+
+
+
+<!-- remove loginUrl setting from here and need to be moved to Login.jsp, to support parameterization for oAuth -->
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+        
+            
+        
+    
+
+
+            
+
+
+
+
+
+
+        <div id="main-content" class="container-fluid">
+
+
+
+
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-5">
+
+                    <h1>Sign in</h1>
+    
+
+
+
+
+
+
+
+                    <form method="post" autocomplete="off" action="login.php" name="loginForm" id="login-form">
+                        <input name="_csrf" value="9984-946G-PLXA-UA4N-EUIX-WOCM-SL42-DC42" type="hidden">
+
+                        <input name="realm" value="vzw" type="hidden">
+                        <input name="remainInOverlay" value="" type="hidden">
+                        <input name="goto" value="" type="hidden">
+                        <input name="gotoOnFail" value="" type="hidden">
+
+                        <div class="form-group">
+
+
+    
+                            <label for="IDToken1">User ID</label>
+        
+    
+    
+    
+
+                            <input class="form-control" autocomplete="off" id="IDToken1" name="IDToken1" value="" placeholder="User ID" type="text">
+                        </div>
+                        <div class="form-group">
+
+    
+    
+                            <label for="IDToken2">Password</label>
+                            <input class="form-control" autocomplete="off" id="IDToken2" name="IDToken2" placeholder="Password" type="password">
+                            <input name="userNameOnly" id="userNameOnly" value="false" type="hidden">
+    
+    
+
+                        </div>
+
+
+                        <div class="checkbox row">
+                            <div class="col-xs-7 xs-pr-0">
+    
+                                <label class="checkbox-inline">
+                                    <input id="rememberUserName" name="rememberUserName" value="Y" type="checkbox">
+                                    <span>Remember me</span>
+                                </label>
+        
+            
+                
+            
+            
+        
+    
+    
+                                <div class="xs-mt-10">
+                                    <label class="checkbox-inline">
+                                        <input id="kmsi" name="kmsi" value="Y" type="checkbox">
+                                        <span>Keep me signed in</span>
+                                    </label>
+    
+                                    <a id="sharedComputerTooltip" class="info-circle" aria-label="Remember me. More information tooltip" aria-describedby="tooltipContent" data-toggle="tooltip" data-placement="bottom" title="" tabindex="0" data-original-title="Keep me signed in keeps you signed in on this computer for 2 weeks.  Remember me stores your User ID on this computer.  You should not use these features on public computers."></a>
+    
+                                </div>
+    
+                            </div>
+                            <div class="col-xs-5 xs-pl-0">
+                                <p class="text-right">
+    
+        
+        
+                                    <a id="forgotPasswordLink" href="https://myverizonid.verizon.com/accessmanager/public/c/fp/start">Forgot your Info?</a>
+        
+    
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="form-group">
+                            <button id="login-submit" class="btn btn-default btn-lg" type="submit">Sign in</button>
+                            <input name="rememberUserNameCheckBoxExists" value="Y" type="hidden">
+
+
+    
+    
+        
+    
+
+                            <input name="customerType" value="" type="hidden">
+                            <input name="clientId" value="" type="hidden">
+                            <input name="fromVZT" value="" type="hidden">
+                        </div>
+
+                        <p id="registerProfile" class="visible-xs-inline">
+                            Don't have an account? <a href="https://myverizonid.verizon.com/accessmanager/public/c/reg/start" target="_top">Register</a>
+                        </p>
+
+                    </form>
+                </div>
+
+                <div class="hidden-xs col-sm-6 col-sm-offset-1">
+                    <h1>Register</h1>
+                    <p>With Verizon, you get the convenience of managing your account online including these great benefits:</p>
+    
+        
+                    <ul>
+                        <li>Review and pay your bill</li>
+                        <li>Watch TV online</li>
+                        <li>Change services</li>
+                        <li>Enroll in My Rewards</li>
+                    </ul>
+        
+        
+    
+
+    
+                    <a id="registerProfile2" class="btn btn-primary btn-lg" href="https://myverizonid.verizon.com/accessmanager/public/c/reg/start" target="_top">Register</a>
+    
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        
+        <script src="https://scache.vzw.com/search/staticContent/dist/js/autosuggest.js"></script>
+        
+        
+
+
+
+
+	
+	
+		
+			<div class="footerborder">
+				<div id="copyright-footer" class="container-fluid customCopyRightFooter">
+					<span class="col-xs-16">©2018 <span id="copyrightId">Verizon</span></span>
+				</div>
+			</div>
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--  Set Gomez Tags -->
+        <script type="text/javascript">
+            var gomez_brumPagename = "";
+            var bypassBrum = 'true';
+            var bypassUEM = 'false';
+            if(bypassBrum == 'false' ||  bypassUEM == 'false') {
+                if(gomez_brumPagename != ""){
+                    var gomez={
+                        gs: new Date().getTime(),
+                        acctId: '0532A9',
+                        pgId: 'gomez_brumPagename',
+                        grpId: 'AM_Prod',
+                        wrate: '0.1'
+                    };
+                }
+            }
+        </script>
+       
+        
+            
+                <script type="text/javascript" src="https://scache.vzw.com/am/includes/gtagb-uem.js" data-dtconfig="tp=500,50,0,1|cors=1|doNotDetect=mup,kyu,scr,kyd,mdw,dcl|uam=true|reportUrl=https://uem.vzw.com:8080/dynaTraceMonitor"></script>
+            
+        
+
+
+
+    
+         
+        
+            <script src="https://collaborateext.verizon.com/comm/includes/scripts/vztc.js"></script>
+          
+           
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+            
+        
+    
+</body></html>

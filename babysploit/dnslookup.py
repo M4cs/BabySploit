@@ -68,8 +68,6 @@ def AAAA_Records():
         if r4a.status_code == 200:
             resp4a = r4a.text
             respa = json.loads(resp4a)
-            name4a = respa[0]['name']
-            name4a2 = respa[1]['name']
             ttl4a = respa[0]['ttl']
             ttl4a2 = respa[1]['ttl']
             value4a = respa[0]['value']

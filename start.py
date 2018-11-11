@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Import Modules #
 from configparser import ConfigParser
-from babysploit import display, configuration, dnslookup, helper, iplookup, nmap, reverseshell, searchsploit, tcpdump
+from babysploit import display, configuration, dnslookup, helper, iplookup, nmap, reverseshell, searchsploit, tcpdump, censyslookup, blackeye
 import os
 
 try:
@@ -69,11 +69,13 @@ try:
             reverseshell.run()
             term()
         elif terminal[0:12] == "censyslookup":
-            censyslookup.start()
+            censyslookup.run()
             term()
         elif terminal[0:9] == "dnslookup":
             dnslookup.start()
             term()
+        elif terminal[0:8] == "blackeye":
+            blackeye.run()
         else:
             print("Unknown Command")
             term()

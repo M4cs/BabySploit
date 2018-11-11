@@ -35,3 +35,11 @@ def tools():
     ]
     exptable = SingleTable(exploittable, "Exploitation")
     print(exptable.table)
+    print("")
+    phishingtable = [
+      ['\nTool', 'Description'],
+      ['blackeye', 'BlackEye Phish Kit']
+    ]
+    phishtable = SingleTable(phishingtable, "Phishing")
+    print(phishtable.table)
+    print("")
