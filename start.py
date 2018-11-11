@@ -69,7 +69,7 @@ try:
             reverseshell.run()
             term()
         elif terminal[0:12] == "censyslookup":
-            censyslookup.run()
+            print("Broken Coming Soon")
             term()
         elif terminal[0:9] == "dnslookup":
             dnslookup.start()
