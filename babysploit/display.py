@@ -55,7 +55,7 @@ def tools():
       ['\nTool', '\nDescription'],
       ['metakiller', 'grab metadata of an image'],
     ]
-    cryptable = SingleTable(cryptotable, "Cryptography/Stenography")
+    cryptable = SingleTable(cryptotable, "Cryptography/Steganography")
     bftable = SingleTable(bruteforcetable, "Bruteforcing")
     print(cryptable.table)
     print("")
