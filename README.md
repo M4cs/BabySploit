@@ -12,6 +12,8 @@
 
 Tested on Kali Linux. Should work with all Debian based distros (and other ones if you have the right packages installed)
 
+Join the Discord For Support: https://discord.gg/7VN9VZe
+
 BabySploit is a penetration testing framework aimed at making it easy to learn how to use bigger, 
 more complicated frameworks like Metasploit. With a very easy to use UI and toolkit, anybody
 from any experience level will find use out of BabySploit. Below are some screenshots of the framework.
