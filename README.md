@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://fontmeme.com/temporary/e64faa35d19db778217a7de9dc21586d.png" alt="BabySploit"/></br>
+  <img src="https://i.imgur.com/cf2h0Vn.png" alt="BabySploit"/></br>
 </p>
 
 # BabySploit
