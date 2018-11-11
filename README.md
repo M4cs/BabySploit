@@ -14,10 +14,75 @@ Tested on Kali Linux. Should work with all Debian based distros (and other ones 
 BabySploit is a penetration testing framework aimed at making it easy to learn how to use bigger, 
 more complicated frameworks like Metasploit. With a very easy to use UI and toolkit, anybody
 from any experience level will find use out of BabySploit. Below are some screenshots of the framework.
+<p align="center">
+  <img src="https://image.prntscr.com/image/l35Yo-q5SHKBSWvOLb_mig.png" alt="Welcome"/></br>
+</p>
 
-![alt text](https://image.prntscr.com/image/l35Yo-q5SHKBSWvOLb_mig.png)
+# Installation Instructions:
 
-![alt text](https://image.prntscr.com/image/O48qpQh2Tz2So7tJ4XXC1Q.png)
+BabySploit is best run out of the home directory so to clone it there run:
+```
+git clone git://github.com/M4cs/BabySploit ~/BabySploit
+```
+
+After cloning the installation you must install some pre-requisites. Do so by running the following:
+```
+sudo apt-get update
+sudo apt-get install exploitdb netcat nmap php7.0 -y
+wget http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-11.17.tar.gz
+gzip -dc Image-ExifTool-11.17.tar.gz
+cd Image-ExifTool-11.17
+perl MakeFile.PL
+make test
+sudo make install
+cd ..
+sudo rm -rf Image-ExifTool-11.17
+```
+
+After installing these binaries you must install required Python 3 modules. To do so run the following:
+```
+pip3 install -r requirements.txt --user
+```
+
+# Getting Started:
+
+#### Setting Configuration Values:
+
+BabySploit uses ConfigParser in order to write and read configuration. Your config file is automatically
+generated and located at `./babysploit/config/config.cfg`. You can manually change configuration settings
+by opening up the file and editing with a text editor or you can use the set command to set a new value for
+a key. Use the set command like so:
+```
+set rhost
+>> Enter Value For rhost: 10
+>> Config Key Saved!
+```
+
+If before running this command the rhost key had a value of 80, the rhost key after running this command has a
+value of 10. You can also add configuration variables to the config by using the set command with a new key after it
+like so:
+```
+set newkey
+>> Enter Value For newkey: hello
+>> Config Key Saved!
+```
+
+Before running this there was no key named "newkey". After running this you will have a key named "newkey" in your config
+until you use the `reset` command which resets the saved configuration.
+
+#### Running A Tool
+
+In order to run a tool all you have to do is enter the name of the tool into BabySploit. You can use the `tools` command
+to display a menu with all the currently availble tools. If we run tools we get the depiction:
+
+<p align-"center">
+  <img src="https://image.prntscr.com/image/S-BrY0paRcGoliP1NPg5fA.png" alt="Tools"/>
+</p>
+
+*this depiction may be outdated*
+
+This menu will display the tools available and the description of each tool. To run a tool simply enter the tool name
+into BabySploit. Ex: `ftpbruteforce` - runs the ftpbruteforce tool.
 
 # Features (Current, In The Works, Planned):
 
