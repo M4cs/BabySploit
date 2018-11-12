@@ -33,9 +33,9 @@ After cloning the installation you must install some pre-requisites. **If you ar
 sudo apt-get update
 sudo apt-get install exploitdb netcat nmap php7.0 perl -y
 wget http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-11.17.tar.gz
-gzip -dc Image-ExifTool-11.17.tar.gz
+tar xf Image-ExifTool-11.17.tar.gz
 cd Image-ExifTool-11.17
-perl MakeFile.PL
+perl MakeFile
 make test
 sudo make install
 cd ..
