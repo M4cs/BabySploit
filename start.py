@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Import Modules #
 from configparser import ConfigParser
-from babysploit import display, configuration, dnslookup, helper, iplookup, nmap, reverseshell, searchsploit, tcpdump, censyslookup, blackeye, metakiller, ftpbruteforce
+from babysploit import display, configuration, dnslookup, helper, iplookup, nmap, reverseshell, searchsploit, tcpdump, censyslookup, blackeye, metakiller, ftpbruteforce, updater
 from pyfiglet import Figlet
 import os
 
@@ -17,6 +17,18 @@ try:
     # Load Config #
     config = ConfigParser()
     config.read("babysploit/config/config.cfg")
+    state, data, cv = updater.checkupdate()
+    if state == "uptodate":
+        pass
+    elif state == "outofdate":
+        print("Current Version %s Is Out Of Date!" % data)
+        print("Version %s Is Available!" % cv)
+        print("Would You Like To Update?")
+        answer = str(input("[y\\n] ").lower())
+        if answer == "y":
+            updater.update()
+        elif answer == "n":
+            pass
     # Create Terminal/Input #
     def term():
         terminal = input("\n[babysploit]> ") # Define the name of the terminal

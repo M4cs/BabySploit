@@ -1,6 +1,26 @@
 def checkupdate():
+    import requests
     with open("version", "r") as fwv:
-        data = fwv.read()
-        print(data)
+        data = fwv.read().replace(" ", "")
+    cv = requests.get("https://raw.githubusercontent.com/M4cs/BabySploit/master/babysploit/version").text.replace(" ", "")
+    if data == cv:
+        state = "uptodate"
+    elif data != cv:
+        state = "outofdate"
+    return state, data, cv
 
-checkupdate()
+def update():
+    import os, subprocess
+    ans = os.path.exists(".git")
+    if ans == True:
+        print("Starting Update...")
+        pass
+    elif ans == False:
+        print("[!] Error Updating. You Did Not Clone The Repository. [!]")
+        exit()
+    print("Fetching New Version...")
+    subprocess.check_output("git fetch", shell=True)
+    print("Updating...")
+    subprocess.check_output("git pull", shell=True)
+    print("Exiting Updater...")
+    exit()
