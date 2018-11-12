@@ -2,6 +2,7 @@
 # Import Modules #
 from configparser import ConfigParser
 from babysploit import display, configuration, dnslookup, helper, iplookup, nmap, reverseshell, searchsploit, tcpdump, censyslookup, blackeye, metakiller, ftpbruteforce
+from pyfiglet import Figlet
 import os
 
 try:
@@ -20,9 +21,13 @@ try:
     def term():
         terminal = input("\n[babysploit]> ") # Define the name of the terminal
         if terminal[0:4] == "help": # From Char Space 0 - 4 if it = help run the help command.
+            f = Figlet(font='slant')
+            print(f.renderText("       Help"))
             helper.run()
             term()
         elif terminal[0:1] == "?": # Same as above
+            f = Figlet(font='slant')
+            print(f.renderText("       Help"))
             helper.run()
             term()
         elif terminal[0:4] == "info": # Same as above but for info command

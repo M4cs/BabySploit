@@ -1,18 +1,22 @@
 def welcome():
-    import socket, requests
+    import socket, requests, netifaces
     try:
       teddy = requests.get("https://hastebin.com/raw/oyifedagib", timeout=3).text
       print(teddy)
     except requests.exceptions.ReadTimeout:
       pass
     banner = """
-              Welcome to BabySploit!
-            Developed by @maxbridgland
-      Learn Hacking The Easy Way With BabySploit
-    """
-    hostname = socket.gethostbyname(socket.gethostname())
+                     BabySploit!
+              Developed by @maxbridgland
+          https://github.com/M4cs/BabySploit
+        """
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s.connect(("8.8.8.8", 80))
+    ip = s.getsockname()[0]
+    s.close()
     print(banner)
-    print("        [i] Current Local IP: %s [i]" % hostname)
+    print("")
+    print("          [i] Current Local IP: %s [i]" % ip)
 
 def tools():
     from terminaltables import SingleTable

@@ -18,7 +18,5 @@ def run():
         ['exit', 'Exit framework']
     ]
     table = SingleTable(table_data)
-    f = Figlet(font='slant')
-    print(f.renderText("       Help"))
     print(banner)
     print(table.table)

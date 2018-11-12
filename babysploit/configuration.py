@@ -21,8 +21,8 @@ def createuser():
 
 def checkuser():
     if os.path.exists("babysploit/config/config.cfg") == True:
-        print("          [i] Loaded Configuration... [i]")
+        print("            [i] Loaded Configuration... [i]\n\n")
     else:
         createuser()
-        print("     [i] Created New Configuration File... [i]")
+        print("       [i] Created New Configuration File... [i]")
 
