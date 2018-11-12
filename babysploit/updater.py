@@ -1,6 +1,6 @@
 def checkupdate():
     import requests
-    with open("version", "r") as fwv:
+    with open("babysploit/version", "r") as fwv:
         data = fwv.read().replace(" ", "")
     cv = requests.get("https://raw.githubusercontent.com/M4cs/BabySploit/master/babysploit/version").text.replace(" ", "")
     if data == cv:
