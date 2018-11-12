@@ -130,6 +130,6 @@ into BabySploit. Ex: `ftpbruteforce` - runs the ftpbruteforce tool.
 
 Feel free to contribute by making plugins or fixing bugs with a Pull Request. All contributions are helpful and will help make this a great tool.
 
-Licensed Under [MIT](https://github.com/M4cs/BabySploit/master/LICENSE.md).
+Licensed Under [MIT](https://github.com/M4cs/BabySploit/blob/master/LICENSE.md).
 
 Copyright (c) 2018 Syndicated Intelligence
