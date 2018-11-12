@@ -1,8 +1,8 @@
-import subprocess
-import os
-import json
 def platformcheck():
+    from pyfiglet import Figlet
     if os.path.exists("/usr/share/exploitdb") == True:
+            f = Figlet(font='slant')
+            print(f.renderText("     Search"))
             q1 = input("Platform [Windows, Linux, MacOS, PHP, All]: ").lower()
             if q1 == "windows":
                 platform = "windows"
@@ -19,6 +19,9 @@ def platformcheck():
         print("[!] Couldn't find explpoit database. Try running install.py again. [!]")
 
 def search():
+    import subprocess
+    import os
+    import json
     platform = platformcheck()
     search = platform + " " + input("Search: ")
     print("Running Search..")
