@@ -44,6 +44,7 @@ sudo rm -rf Image-ExifTool-11.17
 
 After installing these binaries you must install required Python 3 modules. To do so run the following:
 ```
+*from within the BabySploit Directory*
 pip3 install -r requirements.txt --user
 ```
 
