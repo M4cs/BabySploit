@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Import Modules #
 from configparser import ConfigParser
-from babysploit import display, configuration, dnslookup, helper, iplookup, ftpv, nmap, reverseshell, searchsploit, censyslookup, blackeye, metakiller, ftpbruteforce, updater
+from babysploit import display, configuration, dnslookup, helper, iplookup, ftpv, nmap, reverseshell, searchsploit, censyslookup, blackeye, metakiller, ftpbruteforce, updater, pdfmeta
 from pyfiglet import Figlet
 import os
 
@@ -88,6 +88,9 @@ try:
             exit()
         elif terminal[0:8] == "iplookup":
             iplookup.run()
+            term()
+        elif terminal[0:7] == "pdfmeta":
+            pdfmeta.start()
             term()
         elif terminal[0:4] == "nmap":
             nmap.run()
