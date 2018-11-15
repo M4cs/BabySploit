@@ -30,6 +30,7 @@ git clone git://github.com/M4cs/BabySploit ~/BabySploit
 
 After cloning the installation you must install some pre-requisites. **If you are on Kali you should already have all of these installed but it doesn't hurt to do so anyways just in case**. Do so by running the following:
 ```
+*from within the babysploit directory*
 sudo apt-get update
 sudo apt-get install exploitdb netcat nmap php7.0 perl -y
 wget http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-11.17.tar.gz
