@@ -1,4 +1,5 @@
 def platformcheck():
+    import os
     from pyfiglet import Figlet
     if os.path.exists("/usr/share/exploitdb") == True:
             f = Figlet(font='slant')
