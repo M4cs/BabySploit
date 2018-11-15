@@ -1,5 +1,5 @@
 def welcome():
-    import socket, requests, netifaces
+    import socket, requests
     try:
       teddy = requests.get("https://hastebin.com/raw/oyifedagib", timeout=3).text
       print(teddy)
@@ -60,6 +60,7 @@ def tools():
     cryptotable = [
       ['\nTool', '\nDescription'],
       ['metakiller', 'grab metadata of an image'],
+      ['pdfmeta', 'pdf meta data']
     ]
     cryptable = SingleTable(cryptotable, "Cryptography/Steganography")
     bftable = SingleTable(bruteforcetable, "Bruteforcing")
