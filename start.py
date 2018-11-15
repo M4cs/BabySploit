@@ -12,7 +12,17 @@ try:
     display.welcome()
     # Check For Configuration File/Create New Configuration File #
     configuration.checkuser()
+    state, data, cv = updater.checkupdate()
+    print("              Current Version: %s\n" % data)
+    if data != cv:
+        print("              Newest Version: %s\n" % cv)
     # Display Help Menu #
+    banner = """    BabySploit is a framework aimed at helping aspiring
+ penetration testers learn how to use the most common and
+  useful tools in the field. Below is a table displaying 
+      what commands are available and what they do.    
+    """
+    print(banner)
     helper.run()
     # Load Config #
     config = ConfigParser()
@@ -99,6 +109,26 @@ try:
             term()
         elif terminal[0:13] == "ftpbruteforce":
             ftpbruteforce.start()
+        elif terminal[0:6] == "update":
+            print("Would you like to check for updates?")
+            ans = str(input("[y\\n] ").lower())
+            if ans == "y":
+                print("Checking for Updates...")
+                state, data, cv = updater.checkupdate()
+                print("Current Version: %s" % data)
+                if state == "uptodate":
+                    print("You are all up to date on version: %s" % data)
+                else:
+                    print("Found New Version: %s\nWould you like to update?" % cv)
+                    ans2 = input("[y\\n] ").lower()
+                    if ans2 == "y":
+                        updater.update()
+                    else:
+                        print("Cancelling..")
+                        pass
+            term()
+
+
         else:
             print("Unknown Command")
             term()

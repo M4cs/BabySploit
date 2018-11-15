@@ -1,7 +1,7 @@
 def run():
     from pyfiglet import Figlet
     import os
-    f = Figlet(style='slant')
+    f = Figlet(font='slant')
     f.renderText("Tutorial")
     start = """
 Welcome to the BabySploit Tutorial
