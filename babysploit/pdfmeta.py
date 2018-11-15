@@ -1,6 +1,6 @@
 def start():
     from PyPDF3 import PdfFileReader
-    import os, glob
+    import glob
     print("Put PDF file in pdfs/")
     print("Which PDF file would you like to read the meta data for?")
     for d in glob.iglob("pdfs/*"):
