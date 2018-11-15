@@ -21,6 +21,13 @@ from any experience level will find use out of BabySploit. Below are some screen
   <img src="https://image.prntscr.com/image/l35Yo-q5SHKBSWvOLb_mig.png" alt="Welcome"/></br>
 </p>
 
+# Changelog (from 0.0.6):
+
+#### 0.0.6 Update:
+  - Fix updater script
+  - Remove tcpdump
+  - Add ftpvulnscan and pdfmeta
+  
 # Installation Instructions:
 
 BabySploit is best run out of the home directory so to clone it there run:
