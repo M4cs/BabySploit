@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Import Modules #
 from configparser import ConfigParser
-from babysploit import display, configuration, dnslookup, helper, iplookup, nmap, reverseshell, searchsploit, tcpdump, censyslookup, blackeye, metakiller, ftpbruteforce, updater
+from babysploit import display, configuration, dnslookup, helper, iplookup, ftpv, nmap, reverseshell, searchsploit, tcpdump, censyslookup, blackeye, metakiller, ftpbruteforce, updater
 from pyfiglet import Figlet
 import os
 
@@ -103,6 +103,9 @@ try:
             term()
         elif terminal[0:8] == "blackeye":
             blackeye.run()
+            term()
+        elif terminal[0:11] == "ftpvulnscan":
+            ftpv.checkVulnerability()
             term()
         elif terminal[0:10] == "metakiller":
             metakiller.run()

@@ -38,7 +38,9 @@ def tools():
     exploittable = [
       ['\nTool', '\nDescription'],
       ['searchsploit', 'search available exploits (use search command)'],
-      ['reverseshell', 'reverse shell tool for creating payloads']
+      ['reverseshell', 'reverse shell tool for creating payloads'],
+      ['ftpvulnscan', 'check for ftp buffer overflow']
+
     ]
     exptable = SingleTable(exploittable, "Exploitation")
     print(exptable.table)
