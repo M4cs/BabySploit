@@ -12,7 +12,6 @@ try:
     display.welcome()
     # Check For Configuration File/Create New Configuration File #
     configuration.checkuser()
-    subprocess.check_output("git fetch", shell=True)
     state, data, cv = updater.checkupdate()
     print("              Current Version: %s\n" % data)
     if data != cv:
