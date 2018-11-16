@@ -22,7 +22,12 @@ from any experience level will find use out of BabySploit. Below are some screen
   <img src="https://image.prntscr.com/image/l35Yo-q5SHKBSWvOLb_mig.png" alt="Welcome"/></br>
 </p>
 
-# Changelog (from 0.0.6):
+# Changelog:
+
+## Types of Updates:
+  - Updates: Framework has been updated with new features or major fixes.
+  - Releases: Stable release milestone.
+  - Hotfix: Quick hotfix. Minor bug fix or minor change.
 #### 0.1.1 Hotfix:
   - Fix Requirements.txt
 #### 0.1.0 Release:
