@@ -22,6 +22,6 @@ def update():
     subprocess.check_output("git fetch --all", shell=True)
     print("Updating...")
     subprocess.check_output("git reset --hard origin/master", shell=True)
-    subprocess.check_output("pip3 install -m requirements.txt", shell=True)
+    subprocess.check_output("pip3 install -r requirements.txt", shell=True)
     print("Exiting Updater...")
     exit()
