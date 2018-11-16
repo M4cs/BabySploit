@@ -131,11 +131,13 @@ into BabySploit. Ex: `ftpbruteforce` - runs the ftpbruteforce tool.
   - Datasploit (In The Works)
   - Censys Lookup
   - DNS Lookup
+  - Raccoon
   
 ### Exploitation:
   
   - Searchsploit
   - ReverseShell Wizard
+  - FTP Buffer Overflow Scan
 
 ### Post Exploitation:
 
@@ -152,6 +154,7 @@ into BabySploit. Ex: `ftpbruteforce` - runs the ftpbruteforce tool.
 ### Crypto/Stegano:
 
   - MetaKiller
+  - PDFMeta
   
 # Contributing
 
