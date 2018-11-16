@@ -1,7 +1,7 @@
 def welcome():
     import socket, requests, random
     try:  
-      teddy = requests.get("http://ix.io/1s4I", timeout=3).text
+      teddy = requests.get("http://ix.io/1s4M", timeout=3).text
       print(teddy)
     except requests.exceptions.ReadTimeout:
       pass
