@@ -86,6 +86,13 @@ try:
         elif terminal[0:4] == "exit":
             print("Exiting...")
             exit()
+        elif terminal[0:7] == "raccoon":
+            if terminal[8:] == terminal[8:]:
+                query = terminal[8:]
+                os.system("raccoon %s" % query)
+            else:
+                print("Please use raccoon --help for arguments.")
+            term()
         elif terminal[0:8] == "iplookup":
             iplookup.run()
             term()

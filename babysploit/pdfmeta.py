@@ -11,7 +11,7 @@ def start():
         pass
     else:
         ans = ans + ".pdf"
-    pdffile = PdfFileReader(file(ans, 'rb'))
+    pdffile = PdfFileReader(file=(ans, 'rb'))
     docInfo = pdffile.getDocumentInfo()
     for metaItem in docInfo:
         print("- " + metaItem + ":" + docInfo[metaItem])

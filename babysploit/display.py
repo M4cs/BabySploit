@@ -1,7 +1,7 @@
 def welcome():
-    import socket, requests
-    try:
-      teddy = requests.get("https://hastebin.com/raw/oyifedagib", timeout=3).text
+    import socket, requests, random
+    try:  
+      teddy = requests.get("http://ix.io/1s4I", timeout=3).text
       print(teddy)
     except requests.exceptions.ReadTimeout:
       pass
@@ -29,7 +29,8 @@ def tools():
       ['nmap', 'nmap port scanner tool'],
       ['iplookup', 'ip info tool'],
       ['dnslookup', 'dns lookup tool'],
-      ['censyslookup', 'censys api lookup | req api creds']
+      ['censyslookup', 'censys api lookup | req api creds'],
+      ['raccoon', 'use raccoon scanner tool | command: raccoon --help']
     ]
     table = SingleTable(infotable, "Information Gathering")
     print("")
