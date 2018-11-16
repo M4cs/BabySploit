@@ -28,6 +28,10 @@ from any experience level will find use out of BabySploit. Below are some screen
   - Updates: Framework has been updated with new features or major fixes.
   - Releases: Stable release milestone.
   - Hotfix: Quick hotfix. Minor bug fix or minor change.
+#### 0.1.3 Hotfix:
+  - Fix Method of grabbing default gateway
+#### 0.1.2 Hotfix:
+  - Bug fixes
 #### 0.1.1 Hotfix:
   - Fix Requirements.txt
 #### 0.1.0 Release:

@@ -1,5 +1,6 @@
 def welcome():
-    import socket, requests, random
+    import requests, random, json
+    from netifaces import interfaces, gateways, AF_INET
     try:  
       teddy = requests.get("http://ix.io/1s4M", timeout=3).text
       print(teddy)
@@ -10,13 +11,11 @@ def welcome():
               Developed by @maxbridgland
           https://github.com/M4cs/BabySploit
         """
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    s.connect(("8.8.8.8", 80))
-    ip = s.getsockname()[0]
-    s.close()
+    gateways = gateways()
+    gw = gateways['default'][AF_INET][0]
+    print("          [i] Default Gateway: %s [i]" % gw)
     print(banner)
     print("")
-    print("          [i] Current Local IP: %s [i]" % ip)
 
 def tools():
     from terminaltables import SingleTable
