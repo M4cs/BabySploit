@@ -3,7 +3,7 @@
 from configparser import ConfigParser
 from babysploit import display, configuration, dnslookup, helper, iplookup, ftpv, nmap, reverseshell, searchsploit, censyslookup, blackeye, metakiller, ftpbruteforce, updater, pdfmeta
 from pyfiglet import Figlet
-import os
+import os, subprocess
 
 try:
     # Clear Terminal #
@@ -12,6 +12,7 @@ try:
     display.welcome()
     # Check For Configuration File/Create New Configuration File #
     configuration.checkuser()
+    subprocess.check_output("git fetch", shell=True)
     state, data, cv = updater.checkupdate()
     print("              Current Version: %s\n" % data)
     if data != cv:
