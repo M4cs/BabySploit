@@ -23,6 +23,11 @@ from any experience level will find use out of BabySploit. Below are some screen
 </p>
 
 # Changelog (from 0.0.6):
+#### 0.0.8 Update:
+  - Fix Updater
+  - Add Raccoon Vuln Scan
+  - Fix PDFMeta
+  - Update Display
 #### 0.0.7 Hotfix:
   - Fix some bugs
 #### 0.0.6 Update:
