@@ -2,13 +2,14 @@
   <img src="https://i.imgur.com/cf2h0Vn.png" alt="BabySploit"/></br>
 </p>
 
-# BabySploit
-[![GitHub forks](https://img.shields.io/github/forks/M4cs/BabySploit.svg)](https://github.com/M4cs/BabySploit/network)
-[![GitHub stars](https://img.shields.io/github/stars/M4cs/BabySploit.svg)](https://github.com/M4cs/BabySploit/stargazers)
-[![GitHub license](https://img.shields.io/github/license/M4cs/BabySploit.svg)](https://github.com/M4cs/BabySploit/blob/master/LICENSE.md)
-[![GitHub issues](https://img.shields.io/github/issues/M4cs/BabySploit.svg)](https://github.com/M4cs/BabySploit/issues)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/M4cs/BabySploit.svg?style=popout)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FM4cs%2FBabySploit)
-[![Discord](https://img.shields.io/badge/discord-join-blue.svg?syle=popout)](https://discord.gg/7VN9VZe)
+<p align="center">
+  <a href="https://github.com/M4cs/BabySploit/network"><img src="https://img.shields.io/github/forks/M4cs/BabySploit.svg" alt="Forks"></a>
+  <a href="https://github.com/M4cs/BabySploit/stargazers"><img src="https://img.shields.io/github/stars/M4cs/BabySploit.svg" atl="Stars"></a>
+  <a href="https://github.com/M4cs/BabySploit/issues"><img src="https://img.shields.io/github/issues/M4cs/BabySploit.svg" alt="Issues"></a>
+  <a href="https://github.com/M4cs/BabySploit/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/M4cs/BabySploit.svg" alt="License"></a>
+  <a href="http://www.python.org/download/"><img alt="Python 3.6+" src="https://img.shields.io/badge/Python-3.6+-yellow.svg"></a>
+  <a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FM4cs%2FBabySploit"><img src="https://img.shields.io/twitter/url/https/github.com/M4cs/BabySploit.svg?style=popout" alt="Twitter"></a>
+  <a href="https://discord.gg/7VN9VZe"><img src="https://img.shields.io/badge/discord-join-blue.svg?syle=popout"></a>
 
 Tested on Kali Linux. Should work with all Debian based distros (and other ones if you have the right packages installed)
 
