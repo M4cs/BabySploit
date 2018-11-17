@@ -122,7 +122,7 @@ until you use the `reset` command which resets the saved configuration.
 In order to run a tool all you have to do is enter the name of the tool into BabySploit. You can use the `tools` command
 to display a menu with all the currently availble tools. If we run tools we get the depiction:
 <p align="center">
-  <img src="https://image.prntscr.com/image/S-BrY0paRcGoliP1NPg5fA.png" alt="Tools"/>
+  <img src="https://image.prntscr.com/image/dMlUOjFnQk_KSyru1gTQ2A.png" alt="Tools"/>
 </p>
 *this depiction may be outdated*
 
