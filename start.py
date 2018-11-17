@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Import Modules #
 from configparser import ConfigParser
-from babysploit import display, configuration, dnslookup, helper, iplookup, ftpv, nmap, reverseshell, searchsploit, censyslookup, blackeye, metakiller, ftpbruteforce, updater, pdfmeta
+from babysploit import display, configuration, dnslookup, helper, iplookup, ftpv, nmap, reverseshell, searchsploit, censyslookup, blackeye, metakiller, ftpbruteforce, updater, pdfmeta, wpseku, cloudflarebypass
 from pyfiglet import Figlet
 import os, subprocess
 
@@ -105,8 +105,15 @@ try:
         elif terminal[0:10] == "metakiller":
             metakiller.run()
             term()
+        elif terminal[0:6] == "wpseku":
+            wpseku.run()
+            term()
+        elif terminal[0:8] == "cfbypass":
+            cloudflarebypass.run()
+            term()
         elif terminal[0:13] == "ftpbruteforce":
             ftpbruteforce.start()
+            term()
         elif terminal[0:6] == "update":
             print("Would you like to check for updates?")
             ans = str(input("[y\\n] ").lower())
@@ -115,8 +122,6 @@ try:
             else:
                 pass
             term()
-
-
         else:
             print("Unknown Command")
             term()

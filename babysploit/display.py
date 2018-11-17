@@ -1,11 +1,10 @@
+import requests
+import random
+import json
 def welcome():
-    import requests, random, json
-    from netifaces import interfaces, gateways, AF_INET
-    try:  
-      teddy = requests.get("http://ix.io/1s4M", timeout=3).text
-      print(teddy)
-    except requests.exceptions.ReadTimeout:
-      pass
+    from netifaces import  gateways, AF_INET 
+    teddy = requests.get("http://ix.io/1s4M").text
+    print(teddy)
     banner = """
                      BabySploit!
               Developed by @maxbridgland
@@ -29,7 +28,8 @@ def tools():
       ['iplookup', 'ip info tool'],
       ['dnslookup', 'dns lookup tool'],
       ['censyslookup', 'censys api lookup | req api creds'],
-      ['raccoon', 'use raccoon scanner tool | command: raccoon --help']
+      ['raccoon', 'use raccoon scanner tool | command: raccoon --help'],
+      ['cfbypass', 'cloudflare bypasser']
     ]
     table = SingleTable(infotable, "Information Gathering")
     print("")
@@ -39,8 +39,8 @@ def tools():
       ['\nTool', '\nDescription'],
       ['searchsploit', 'search available exploits (use search command)'],
       ['reverseshell', 'reverse shell tool for creating payloads'],
-      ['ftpvulnscan', 'check for ftp buffer overflow']
-
+      ['ftpvulnscan', 'check for ftp buffer overflow'],
+      ['wpseku', 'wordpress vulnerability scanner']
     ]
     exptable = SingleTable(exploittable, "Exploitation")
     print(exptable.table)
