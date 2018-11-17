@@ -1,6 +1,6 @@
 def checkupdate():
-    import requests, os, subprocess
-    from tqdm import tqdm, trange
+    import requests
+    from subprocess import Popen, PIPE
     with open("babysploit/version", "r") as fwv:
         data = fwv.read().replace(" ", "")
     cv = requests.get("https://raw.githubusercontent.com/M4cs/BabySploit/master/babysploit/version").text.replace(" ", "")
@@ -10,7 +10,12 @@ def checkupdate():
         print("[!] Update Found | Version: %s [!]" % cv)
         ask = str(input("[y\\n] ").lower())
         if ask == "y":
-            for i in tqdm(range(int(100)), desc="Updating"):
-                subprocess.check_output("git fetch --all", shell=True)
-                subprocess.check_output("git reset --hard origin/master", shell=True)
-                subprocess.check_output("pip3 install -r requirements.txt", shell=True)
+            process1 = Popen(["git", "fetch", "--all"], stdout=PIPE, stderr=PIPE)
+            process2 = Popen(["git", "reset", "--hard", "origin/master"], stdout=PIPE, stderr=PIPE)
+            process3 = Popen(["pip3", "install", "-r", "requirements.txt"], stdout=PIPE, stderr=PIPE)
+            print("Fetching Update..")
+            process1.communicate()
+            print("Downloading Update..")
+            process2.communicate()
+            print("Installing Modules.. This may take a minute..")
+            process3.communicate()
