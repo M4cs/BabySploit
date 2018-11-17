@@ -55,7 +55,6 @@ pyasn1==0.4.4
 pyasn1-modules==0.2.2
 pycairo==1.16.2
 pycparser==2.19
-pycrypto==2.6.1
 pycurl==7.43.0.1
 PyDispatcher==2.0.5
 pyexif==0.2.1
