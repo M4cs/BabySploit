@@ -11,7 +11,9 @@
   <a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FM4cs%2FBabySploit"><img src="https://img.shields.io/twitter/url/https/github.com/M4cs/BabySploit.svg?style=popout" alt="Twitter"></a>
   <a href="https://discord.gg/7VN9VZe"><img src="https://img.shields.io/badge/discord-join-blue.svg?syle=popout"></a>
 
-Tested on Kali Linux. Should work with all Debian based distros (and other ones if you have the right packages installed)
+<p align="center">
+  <b>Tested on Kali Linux. Should work with all Debian based distros (and other ones if you have the right packages installed)</b>
+</p>
 
 <p align="center">
   <a href="https://bit.ly/2Ke9uVi">Donate To The Developer</a>
