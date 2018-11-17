@@ -19,3 +19,4 @@ def checkupdate():
             process2.communicate()
             print("Installing Modules.. This may take a minute..")
             process3.communicate()
+            Popen(["rm -rf babysploit/__pycache__/"], stdout=PIPE, stderr=PIPE)
