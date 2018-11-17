@@ -165,6 +165,7 @@ into BabySploit. Ex: `ftpbruteforce` - runs the ftpbruteforce tool.
 ### Bruteforcing:
 
   - FTP Bruteforcer
+  - WPSeku WordPress Login Bruteforce
   
 ### Phishing:
 
