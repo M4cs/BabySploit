@@ -1,0 +1,23 @@
+{
+    "changelogs": [
+        "changelog.txt", "changelog.md", "CHANGELOG.txt", "changelog",
+        "CHANGELOG.md", "ChangeLog.txt", "ChangeLog.md", "CHANGELOG"
+    ],
+    "fpd": [
+        "404.php", "archive.php", "author.php", "comments.php",
+        "footer.php", "functions.php", "header.php", "image.php",
+        "page.php", "search.php", "single.php", "archive.php"
+    ],
+    "license": [
+        "license.txt", "license.md", "LICENSE.md", "LICENSE.txt",
+        "LICENSE"
+    ],
+    "dirs": [
+        "js", "css", "images", "inc", "admin", "src", "widgets", "lib",
+        "assets", "includes", "logs", "vendor", "core"
+    ],
+    "readme": [
+        "readme.txt", "readme.md", "README.md", "README.txt", "README",
+        "readme"
+    ]
+}
