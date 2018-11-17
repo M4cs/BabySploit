@@ -11,16 +11,23 @@
   <a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FM4cs%2FBabySploit"><img src="https://img.shields.io/twitter/url/https/github.com/M4cs/BabySploit.svg?style=popout" alt="Twitter"></a>
   <a href="https://discord.gg/7VN9VZe"><img src="https://img.shields.io/badge/discord-join-blue.svg?syle=popout"></a>
 
-Tested on Kali Linux. Should work with all Debian based distros (and other ones if you have the right packages installed)
+<p align="center">
+  <b>Tested on Kali Linux. Should work with all Debian based distros (and other ones if you have the right packages installed)</b>
+</p>
 
+<p align="center">
+  <a href="https://bit.ly/2Ke9uVi">Donate To The Developer</a>
+</p>
 <p align="center">
   <a href="https://discord.gg/7VN9VZe"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/27090541/8dd5c907f2a0eecb73dc6a4776fc9a25878ebcdd.png" alt="Forks"></a>
 
-BabySploit is a penetration testing framework aimed at making it easy to learn how to use bigger, 
-more complicated frameworks like Metasploit. With a very easy to use UI and toolkit, anybody
-from any experience level will find use out of BabySploit. Below are some screenshots of the framework.
 <p align="center">
-  <img src="https://image.prntscr.com/image/l35Yo-q5SHKBSWvOLb_mig.png" alt="Welcome"/></br>
+  <b>BabySploit is a penetration testing framework aimed at making it easy to learn how to use bigger,</br> 
+more complicated frameworks like Metasploit. With a very easy to use UI and toolkit, anybody</br>
+from any experience level will find use out of BabySploit. Below are some screenshots of the framework.</b>
+</p>
+<p align="center">
+  <img src="https://image.prntscr.com/image/6QxQQfNmS72LetrSBtVeHg.png" alt="Welcome"/></br>
 </p>
 
 # Changelog:
@@ -108,7 +115,7 @@ until you use the `reset` command which resets the saved configuration.
 In order to run a tool all you have to do is enter the name of the tool into BabySploit. You can use the `tools` command
 to display a menu with all the currently availble tools. If we run tools we get the depiction:
 <p align="center">
-  <img src="https://image.prntscr.com/image/S-BrY0paRcGoliP1NPg5fA.png" alt="Tools"/>
+  <img src="https://image.prntscr.com/image/dMlUOjFnQk_KSyru1gTQ2A.png" alt="Tools"/>
 </p>
 *this depiction may be outdated*
 
@@ -135,13 +142,15 @@ into BabySploit. Ex: `ftpbruteforce` - runs the ftpbruteforce tool.
   - Censys Lookup
   - DNS Lookup
   - Raccoon
+  - Cloudflare Bypasser
   
 ### Exploitation:
   
   - Searchsploit
   - ReverseShell Wizard
   - FTP Buffer Overflow Scan
-
+  - WPSeku WordPress Vuln Scanner
+  
 ### Post Exploitation:
 
   - In The Works
@@ -149,6 +158,7 @@ into BabySploit. Ex: `ftpbruteforce` - runs the ftpbruteforce tool.
 ### Bruteforcing:
 
   - FTP Bruteforcer
+  - WPSeku WordPress Login Bruteforce
   
 ### Phishing:
 
