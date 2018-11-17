@@ -27,7 +27,7 @@ more complicated frameworks like Metasploit. With a very easy to use UI and tool
 from any experience level will find use out of BabySploit. Below are some screenshots of the framework.</b>
 </p>
 <p align="center">
-  <img src="https://image.prntscr.com/image/l35Yo-q5SHKBSWvOLb_mig.png" alt="Welcome"/></br>
+  <img src="https://image.prntscr.com/image/6QxQQfNmS72LetrSBtVeHg.png" alt="Welcome"/></br>
 </p>
 
 # Changelog:
