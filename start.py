@@ -111,19 +111,9 @@ try:
             print("Would you like to check for updates?")
             ans = str(input("[y\\n] ").lower())
             if ans == "y":
-                print("Checking for Updates...")
-                state, data, cv = updater.checkupdate()
-                print("Current Version: %s" % data)
-                if state == "uptodate":
-                    print("You are all up to date on version: %s" % data)
-                else:
-                    print("Found New Version: %s\nWould you like to update?" % cv)
-                    ans2 = input("[y\\n] ").lower()
-                    if ans2 == "y":
-                        updater.checkupdate()
-                    else:
-                        print("Cancelling..")
-                        pass
+                updater.checkupdate()
+            else:
+                pass
             term()
 
 
