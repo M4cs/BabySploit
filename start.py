@@ -12,10 +12,7 @@ try:
     display.welcome()
     # Check For Configuration File/Create New Configuration File #
     configuration.checkuser()
-    state, data, cv = updater.checkupdate()
-    print("              Current Version: %s\n" % data)
-    if data != cv:
-        print("              Newest Version: %s\n" % cv)
+    updater.checkupdate()
     # Display Help Menu #
     banner = """    BabySploit is a framework aimed at helping aspiring
  penetration testers learn how to use the most common and
@@ -27,18 +24,6 @@ try:
     # Load Config #
     config = ConfigParser()
     config.read("babysploit/config/config.cfg")
-    state, data, cv = updater.checkupdate()
-    if state == "uptodate":
-        pass
-    elif state == "outofdate":
-        print("Current Version %s Is Out Of Date!" % data)
-        print("Version %s Is Available!" % cv)
-        print("Would You Like To Update?")
-        answer = str(input("[y\\n] ").lower())
-        if answer == "y":
-            updater.update()
-        elif answer == "n":
-            pass
     # Create Terminal/Input #
     def term():
         terminal = input("\n[babysploit]> ") # Define the name of the terminal
@@ -135,7 +120,7 @@ try:
                     print("Found New Version: %s\nWould you like to update?" % cv)
                     ans2 = input("[y\\n] ").lower()
                     if ans2 == "y":
-                        updater.update()
+                        updater.checkupdate()
                     else:
                         print("Cancelling..")
                         pass
