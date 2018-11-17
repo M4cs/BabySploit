@@ -36,6 +36,9 @@ from any experience level will find use out of BabySploit. Below are some screen
   - Updates: Framework has been updated with new features or major fixes.
   - Releases: Stable release milestone.
   - Hotfix: Quick hotfix. Minor bug fix or minor change.
+#### 0.1.7 Update:
+  - Added Installer Script
+  - Fixed Updater
 #### 0.1.6 Update:
   - Added Cloudflare Bypasser
   - Added WPSeku WP Vuln Scan
