@@ -14,6 +14,9 @@
 Tested on Kali Linux. Should work with all Debian based distros (and other ones if you have the right packages installed)
 
 <p align="center">
+  <h1 href="https://bit.ly/2Ke9uVi">Donate To The Developer</h1>
+</p>
+<p align="center">
   <a href="https://discord.gg/7VN9VZe"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/27090541/8dd5c907f2a0eecb73dc6a4776fc9a25878ebcdd.png" alt="Forks"></a>
 
 BabySploit is a penetration testing framework aimed at making it easy to learn how to use bigger, 
