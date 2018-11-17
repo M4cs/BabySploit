@@ -149,13 +149,15 @@ into BabySploit. Ex: `ftpbruteforce` - runs the ftpbruteforce tool.
   - Censys Lookup
   - DNS Lookup
   - Raccoon
+  - Cloudflare Bypasser
   
 ### Exploitation:
   
   - Searchsploit
   - ReverseShell Wizard
   - FTP Buffer Overflow Scan
-
+  - WPSeku WordPress Vuln Scanner
+  
 ### Post Exploitation:
 
   - In The Works
