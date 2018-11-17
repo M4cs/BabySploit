@@ -59,7 +59,6 @@ def tools():
     ]
     cryptotable = [
       ['\nTool', '\nDescription'],
-      ['metakiller', 'grab metadata of an image'],
       ['pdfmeta', 'pdf meta data']
     ]
     cryptable = SingleTable(cryptotable, "Cryptography/Steganography")

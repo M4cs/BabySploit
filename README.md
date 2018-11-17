@@ -67,15 +67,8 @@ After cloning the installation you must install some pre-requisites. **If you ar
 ```
 *from within the babysploit directory*
 sudo apt-get update
-sudo apt-get install exploitdb netcat nmap php7.0 perl -y
-wget http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-11.17.tar.gz
-tar xf Image-ExifTool-11.17.tar.gz
-cd Image-ExifTool-11.17
-perl MakeFile
-make test
-sudo make install
-cd ..
-sudo rm -rf Image-ExifTool-11.17
+sudo apt-get upgrade
+sudo python3 install.sh
 ```
 
 After installing these binaries you must install required Python 3 modules. To do so run the following:

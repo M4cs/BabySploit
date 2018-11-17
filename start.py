@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Import Modules #
 from configparser import ConfigParser
-from babysploit import display, configuration, dnslookup, helper, iplookup, ftpv, nmap, reverseshell, searchsploit, censyslookup, blackeye, metakiller, ftpbruteforce, updater, pdfmeta, wpseku, cloudflarebypass
+from babysploit import display, configuration, dnslookup, helper, iplookup, ftpv, nmap, reverseshell, searchsploit, censyslookup, blackeye, ftpbruteforce, updater, pdfmeta, wpseku, cloudflarebypass
 from pyfiglet import Figlet
 import os, subprocess
 
@@ -101,9 +101,6 @@ try:
             term()
         elif terminal[0:11] == "ftpvulnscan":
             ftpv.checkVulnerability()
-            term()
-        elif terminal[0:10] == "metakiller":
-            metakiller.run()
             term()
         elif terminal[0:6] == "wpseku":
             wpseku.run()
