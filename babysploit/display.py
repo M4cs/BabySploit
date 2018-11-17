@@ -2,7 +2,7 @@ import requests
 import random
 import json
 def welcome():
-    from netifaces import  gateways, AF_INET 
+    from netifaces import gateways, AF_INET
     teddy = requests.get("http://ix.io/1s4M").text
     print(teddy)
     banner = """
