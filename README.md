@@ -30,6 +30,21 @@ from any experience level will find use out of BabySploit. Below are some screen
 <p align="center">
   <img src="https://image.prntscr.com/image/6QxQQfNmS72LetrSBtVeHg.png" alt="Welcome"/></br>
 </p>
+  
+# Installation Instructions:
+
+BabySploit is best run out of the home directory so to clone it there run:
+```
+git clone git://github.com/M4cs/BabySploit ~/BabySploit
+```
+
+After cloning the installation you must install some pre-requisites. **If you are on Kali you should already have all of these installed but it doesn't hurt to do so anyways just in case**. Do so by running the following:
+```
+*from within the babysploit directory*
+sudo apt-get update
+sudo apt-get upgrade
+sudo python3 install.py
+```
 
 # Changelog:
 
@@ -66,21 +81,6 @@ from any experience level will find use out of BabySploit. Below are some screen
   - Fix updater script
   - Remove tcpdump
   - Add ftpvulnscan and pdfmeta
-  
-# Installation Instructions:
-
-BabySploit is best run out of the home directory so to clone it there run:
-```
-git clone git://github.com/M4cs/BabySploit ~/BabySploit
-```
-
-After cloning the installation you must install some pre-requisites. **If you are on Kali you should already have all of these installed but it doesn't hurt to do so anyways just in case**. Do so by running the following:
-```
-*from within the babysploit directory*
-sudo apt-get update
-sudo apt-get upgrade
-sudo python3 install.py
-```
 
 # Getting Started:
 
