@@ -44,7 +44,7 @@ After cloning the installation you must install some pre-requisites. **If you ar
 ~- From Within The BabySploit Directory -!
 sudo apt-get update
 sudo apt-get upgrade
-sudo python3 install.sh
+sudo python3 install.py
 virtualenv babysploit
 source env/bin/activate
 pip3 install -r requirements.txt
