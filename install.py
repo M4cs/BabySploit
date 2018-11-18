@@ -21,7 +21,6 @@ def start():
     input("Press ENTER To Start Installation")
     with open("/etc/apt/sources.list", "r") as myfile:
         data = myfile.read().replace('\n', "")
-        print(data)
         if "http://http.kali.org/kali" not in data:
             print(Command_exe("["+time.strftime('%H:%M:%S')+"] Adding Repo To Sources...                  ",'apt-add-repository "deb http://http.kali.org/kali kali-rolling main non-free contrib"')) 
         else:
