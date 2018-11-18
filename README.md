@@ -27,9 +27,14 @@
 more complicated frameworks like Metasploit. With a very easy to use UI and toolkit, anybody</br>
 from any experience level will find use out of BabySploit. Below are some screenshots of the framework.</b>
 </p>
-<p align="center">
-  <a href="https://asciinema.org/a/Hm2mwhJvQnGAaK4xWAn5NY9l6" target="_blank"><img src="https://asciinema.org/a/Hm2mwhJvQnGAaK4xWAn5NY9l6.svg" /></a>
-</p>
+<head>
+  <link rel="stylesheet" type="text/css" href="/asciinema-player.css" />
+</head>
+<body>
+  <asciinema-player src="/212420.cast" cols="271" rows="73"></asciinema-player>
+  ...
+  <script src="/asciinema-player.js"></script>
+</body>
   
 # Installation Instructions:
 
