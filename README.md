@@ -79,13 +79,7 @@ After cloning the installation you must install some pre-requisites. **If you ar
 *from within the babysploit directory*
 sudo apt-get update
 sudo apt-get upgrade
-sudo python3 install.sh
-```
-
-After installing these binaries you must install required Python 3 modules. To do so run the following:
-```
-*from within the BabySploit Directory*
-pip3 install -r requirements.txt --user
+sudo python3 install.py
 ```
 
 # Getting Started:
