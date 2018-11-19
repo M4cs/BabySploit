@@ -19,7 +19,7 @@
   <a href="https://discord.gg/7VN9VZe"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/27090541/8dd5c907f2a0eecb73dc6a4776fc9a25878ebcdd.png" alt="Forks"></a>
 
 <p align="center">
-  <b>BabySploit is a penetration testing framework aimed at making it easy to learn how to use bigger,</br> 
+  <b>BabySploit is a penetration testing toolkit aimed at making it easy to learn how to use bigger,</br> 
 more complicated frameworks like Metasploit. With a very easy to use UI and toolkit, anybody</br>
 from any experience level will find use out of BabySploit. Below are some screenshots of the framework.</b>
 </p>
