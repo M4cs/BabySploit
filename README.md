@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-  <a href="https://bit.ly/2Ke9uVi">Donate To The Developer</a>
+  <a href="https://bit.ly/2Ke9uVi">Donate</a>
 </p>
 <p align="center">
   <a href="https://discord.gg/7VN9VZe"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/27090541/8dd5c907f2a0eecb73dc6a4776fc9a25878ebcdd.png" alt="Forks"></a>
