@@ -9,7 +9,7 @@ def Command_exe(msg,cmd):
     if subprocess.call(cmd +' >/dev/null 2>&1', shell=True)==0:
         i = "Complete [WARNING] "
     else:
-        i = "Error [WARNING] "
+        i = "Error [WARNING] Run apt-get update and apt-get upgrade | "
     stdout.write("\r" + msg +"[STATUS] %s" % i)
 
 def start():
@@ -22,7 +22,14 @@ def start():
     with open("/etc/apt/sources.list", "r") as myfile:
         data = myfile.read().replace('\n', "")
         if "http://http.kali.org/kali" not in data:
-            print(Command_exe("["+time.strftime('%H:%M:%S')+"] Adding Repo To Sources...                  ",'apt-add-repository "deb http://http.kali.org/kali kali-rolling main non-free contrib"')) 
+            print(Command_exe("["+time.strftime('%H:%M:%S')+"] Adding Regular Repo To Sources [1]...                  ",'echo "deb http://http.kali.org/kali kali main non-free contrib" >> /etc/apt/sources.list'))
+            print(Command_exe("["+time.strftime('%H:%M:%S')+"] Adding Regular Repo To Sources [2]...                  ",'echo "deb http://security.kali.org/kali-security kali/updates main contrib non-free" >> /etc/apt/sources.list'))
+            print(Command_exe("["+time.strftime('%H:%M:%S')+"] Adding Source Repo To Sources  [1]...                  ",'echo "deb-src http://http.kali.org/kali kali main non-free contrib" >> /etc/apt/sources.list'))
+            print(Command_exe("["+time.strftime('%H:%M:%S')+"] Adding Source Repo To Sources  [2]...                  ",'echo "deb-src http://security.kali.org/kali-security kali/updates main contrib non-free" >> /etc/apt/sources.list'))
+            print(Command_exe("["+time.strftime('%H:%M:%S')+"] Cleaning APT...                                        ",'apt-get clean'))
+            print(Command_exe("["+time.strftime('%H:%M:%S')+"] Updating APT...                                        ",'apt-get update'))
+            print(Command_exe("["+time.strftime('%H:%M:%S')+"] Upgrading APT...                                        ",'apt-get upgrade'))
+            print(Command_exe("["+time.strftime('%H:%M:%S')+"] Upgrading Dist...                                        ",'apt-get dist-upgrade'))
         else:
             pass
     print(Command_exe("["+time.strftime('%H:%M:%S')+"] Installing Required Dependencies...        ",'apt-get install exploitdb netcat nmap php7.0 perl -y'))
