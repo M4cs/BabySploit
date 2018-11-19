@@ -25,7 +25,7 @@ def start():
             print(Command_exe("["+time.strftime('%H:%M:%S')+"] Adding Repo To Sources...                  ",'apt-add-repository "deb http://http.kali.org/kali kali-rolling main non-free contrib"')) 
         else:
             pass
-    print(Command_exe("["+time.strftime('%H:%M:%S')+"] Installing Required Dependencies...        ",'apt-get install exploitdb netcat nmap php7.0 perl'))
+    print(Command_exe("["+time.strftime('%H:%M:%S')+"] Installing Required Dependencies...        ",'apt-get install exploitdb netcat nmap php7.0 perl -y'))
     print(Command_exe("["+time.strftime('%H:%M:%S')+"] Installing Virtual Environment...          ",'pip3 install virtualenv'))
     print("Complete!")
     print("Please start virtualenv and run pip3 install -r requirements.txt!")
