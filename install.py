@@ -20,8 +20,8 @@ def start():
     print(" ==  BabySploit Installation  ==")
     input("Press ENTER To Start Installation")
     with open("/etc/apt/sources.list", "r") as myfile:
-        data = myfile.read().replace('\n', "")
-        if "http://http.kali.org/kali" not in data:
+        data = myfile.read().replace('\n', "")  
+        if "deb http://http.kali.org/kali kali main non-free contrib\n" not in data:
             print(Command_exe("["+time.strftime('%H:%M:%S')+"] Adding Regular Repo To Sources [1]...                  ",'echo "deb http://http.kali.org/kali kali main non-free contrib" >> /etc/apt/sources.list'))
             print(Command_exe("["+time.strftime('%H:%M:%S')+"] Adding Regular Repo To Sources [2]...                  ",'echo "deb http://security.kali.org/kali-security kali/updates main contrib non-free" >> /etc/apt/sources.list'))
             print(Command_exe("["+time.strftime('%H:%M:%S')+"] Adding Source Repo To Sources  [1]...                  ",'echo "deb-src http://http.kali.org/kali kali main non-free contrib" >> /etc/apt/sources.list'))
