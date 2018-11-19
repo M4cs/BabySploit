@@ -64,6 +64,9 @@ deactivate
   - Updates: Framework has been updated with new features or major fixes.
   - Releases: Stable release milestone.
   - Hotfix: Quick hotfix. Minor bug fix or minor change.
+#### 0.1.9 Hotfix:
+  - Fix Installer
+  - Fix Updater
 #### 0.1.8 Update:
   - Switch To Virtual Env Installation
 #### 0.1.7 Update:
