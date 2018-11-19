@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://i.imgur.com/cf2h0Vn.png" alt="BabySploit"/></br>
-</p>
+
 
 <p align="center">
   <a href="https://github.com/M4cs/BabySploit/network"><img src="https://img.shields.io/github/forks/M4cs/BabySploit.svg" alt="Forks"></a>
