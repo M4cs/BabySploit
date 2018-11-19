@@ -48,6 +48,7 @@ sudo python3 install.py
 virtualenv babysploit
 source babysploit/bin/activate
 pip3 install -r requirements.txt
+python3 start.py
 
 !- To Leave The Virtual Environment -!
 
