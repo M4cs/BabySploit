@@ -5,3 +5,4 @@ terminaltables==3.1.0
 pyfiglet==0.7.6
 requests==2.20.1
 PyPDF3==1.0.1
+raccoon-scanner==0.8.5
