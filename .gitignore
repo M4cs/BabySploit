@@ -1,3 +1,5 @@
 babysploit/config/config.cfg
 babysploit/__pycache__/
-babysploit/
+babysploit/modules/__pycache__/
+babysploit/wpseku/modules/__pycache__/
+babysploit/wpseku/lib/__pycache__/

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Import Modules #
 from configparser import ConfigParser
-from babysploit import display, configuration, dnslookup, helper, iplookup, ftpv, nmap, reverseshell, searchsploit, censyslookup, blackeye, ftpbruteforce, updater, pdfmeta, wpseku, cloudflarebypass
+from babysploit.modules import display, configuration, dnslookup, helper, iplookup, ftpv, nmap, reverseshell, searchsploit, censyslookup, blackeye, ftpbruteforce, updater, pdfmeta, wpseku, cloudflarebypass
 from pyfiglet import Figlet
 import os, subprocess
 
