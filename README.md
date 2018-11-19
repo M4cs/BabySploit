@@ -13,7 +13,7 @@
   <a href="https://discord.gg/7VN9VZe"><img src="https://img.shields.io/badge/discord-join-blue.svg?syle=popout"></a>
 
 <p align="center">
-  <b>Tested on Kali Linux. Should work with all Debian based distros (and other ones if you have the right packages installed)</b>
+  <b>Tested on Kali Linux. If you are not on Kali you need to add the Kali repository to your APT Sources list and then run install.</b>
 </p>
 
 <p align="center">
@@ -40,6 +40,9 @@ cd ~/BabySploit
 ```
 
 After cloning the installation you must install some pre-requisites. **If you are on Kali you should already have all of these installed but it doesn't hurt to do so anyways just in case**. Do so by running the following:
+
+
+**If you are not on Kali you need to add the Kali repository to your APT Sources list and then run install.**
 ```
 ~- From Within The BabySploit Directory -!
 sudo apt-get update
