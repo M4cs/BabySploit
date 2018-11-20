@@ -54,6 +54,12 @@ python3 start.py
 deactivate
 ```
 
+Docker command
+
+```
+docker run -idt --name babysploit xshuden/babysploit
+```
+
 # Changelog:
 
 ## Types of Updates:
