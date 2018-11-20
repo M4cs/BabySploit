@@ -8,9 +8,11 @@ RUN apt-get update \
     && apt-get install wget -y \
     && apt-get install python3-pip -y \
     && apt-get install software-properties-common -y
-RUN git clone https://github.com/M4cs/BabySploit.git
 RUN wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add \
     && apt-add-repository 'deb http://http.kali.org/kali kali-rolling main non-free contrib'
+
+RUN git clone https://github.com/M4cs/BabySploit.git
+
 RUN apt-get update \
     && apt-get install exploitdb netcat nmap perl -y \
     && apt-get autoremove -y \
