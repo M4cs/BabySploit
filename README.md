@@ -12,7 +12,7 @@
 
 <p align="center">
   <b>Tested on Kali Linux. If you are not on Kali you need to add the Kali repository to your APT Sources list and then run install.</b>
-  </br><a href="https://twitter.com/maxbridgland alt="Twitter Link"><b>Developed by @maxbridgland</b></a></br>
+  </br><a href="https://twitter.com/maxbridgland" alt="Twitter Link"><b>Developed by @maxbridgland</b></a></br>
   <a href="https://bit.ly/2Ke9uVi">Donate</a>
 </p>
 <p align="center">
