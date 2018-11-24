@@ -33,79 +33,51 @@ and
 https://nmap.org/book/man-port-scanning-techniques.html
 
         """)
+
+    arg_map = {
+        1:  "-sS",
+        2:  "-sT",
+        3:  "-sU",
+        4:  "-sY",
+        5:  "-sN",
+        6:  "-sF",
+        7:  "-sX",
+        8:  "-sA",
+        9:  "-sW",
+        10:  "-sM",
+        11:  "-sZ",
+        12:  "-sO",
+        13:  "-sP",
+        14:  "-sI",
+        15:  "-sV",
+        16:  "-sR",
+        17:  "-sL"
+    }
+
     while True:
         terminal = input("> ")
-        if terminal[0:1] == "1":
-            arg = "-sS"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
+
+        # Get all starting integers in the input
+        # "223ss4" -> "223" 
+        argstr = ""
+        for c in terminal:
+            if c.isnumeric():
+                argstr += c
+            else:
+                break
+
+        try:
+            arugument = int(argstr)
+        except TypeError as e:
+            print("%s is not a number, sorry." % terminal)
+            continue
+
+        if arugument == 18:
+            custom_args = input("Enter Arguments (format: nmap <arguments> %s): " % hosts)
+            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (custom_args, hosts, now))
             exit()
-        elif terminal[0:1] == "2":
-            arg = "-sT"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
-            exit()
-        elif terminal[0:1] == "3":
-            arg = "-sU"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
-            exit()
-        elif terminal[0:1] == "4":
-            arg = "-sY"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
-            exit()
-        elif terminal[0:1] == "5":
-            arg = "-sN"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
-            exit()
-        elif terminal[0:1] == "6":
-            arg = "-sF"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
-            exit()
-        elif terminal[0:1] == "7":
-            arg = "-sX"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
-            exit()
-        elif terminal[0:1] == "8":
-            arg = "-sA"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
-            exit()
-        elif terminal[0:1] == "9":
-            arg = "-sW"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
-            exit()
-        elif terminal[0:2] == "10":
-            arg = "-sM"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
-            exit()
-        elif terminal[0:2] == "11":
-            arg = "-sZ"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
-            exit()
-        elif terminal[0:2] == "12":
-            arg = "-sO"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
-            exit()
-        elif terminal[0:2] == "13":
-            arg = "-sP"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
-            exit()
-        elif terminal[0:2] == "14":
-            arg = "-sI"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
-            exit()
-        elif terminal[0:2] == "15":
-            arg = "-sV"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
-            exit()
-        elif terminal[0:2] == "16":
-            arg = "-sR"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
-            exit()
-        elif terminal[0:2] == "17":
-            arg = "-sL"
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
-            exit()
-        elif terminal[0:2] == "18":
-            arg = input("Enter Arguments (format: nmap <arguments> %s): " % hosts)
-            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg, hosts, now))
+        elif arugument in arg_map:
+            os.system("nmap %s %s > babysploit/logs/nmap_scan_%s.log" % (arg_map[arugument], hosts, now))
             exit()
         else:
-            print("That's not a choice sorry.")
+            print("%s not a choice sorry.")
