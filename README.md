@@ -53,10 +53,12 @@ python3 setup.py install
 babysploit
 ```
 
-## Docker Command
+## Docker Run Command
 
 ```
-docker run -idt --name babysploit /Babysploit
+docker run --rm -idt --name babysploit xshuden/babysploit    # container is deleted when you're done
+OR
+docker run -idt --name babysploit xshuden/babysploit
 ```
 
 # Changelog:
