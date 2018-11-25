@@ -40,6 +40,7 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install exploitdb netcat nmap perl php7.0 
 pip3 install babysploit
+babysploit
 ```
 
 In order to use `search` command you must follow steps [here](https://www.exploit-db.com/searchsploit/#install) to install the searchsploit binary!
@@ -52,12 +53,13 @@ sudo apt-get install exploitdb netcat nmap perl php7.0
 git clone https://github.com/M4cs/BabySploit.git
 cd BabySploit/
 python3 setup.py install
+babysploit
 ```
 
 ## Docker Command
 
 ```
-docker run -idt --name babysploit xshuden/babysploit
+docker run -idt --name babysploit /Babysploit
 ```
 
 # Changelog:
