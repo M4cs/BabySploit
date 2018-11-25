@@ -38,7 +38,7 @@ cd ~/BabySploit
 After cloning the installation you must install some pre-requisites. **If you are on Kali you should already have all of these installed but it doesn't hurt to do so anyways just in case**. Do so by running the following:
 
 
-
+## Using Pip
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -48,7 +48,17 @@ pip3 install babysploit
 
 In order to use `search` command you must follow steps [here](https://www.exploit-db.com/searchsploit/#install) to install the searchsploit binary!
 
-Docker command
+## Building From Source
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install exploitdb netcat nmap perl php7.0
+git clone https://github.com/M4cs/BabySploit.git
+cd BabySploit/
+python3 setup.py install
+```
+
+## Docker Command
 
 ```
 docker run -idt --name babysploit xshuden/babysploit
