@@ -38,20 +38,12 @@ cd ~/BabySploit
 After cloning the installation you must install some pre-requisites. **If you are on Kali you should already have all of these installed but it doesn't hurt to do so anyways just in case**. Do so by running the following:
 
 
-**If you are not on Kali you need to add the Kali repository to your APT Sources list and then run install.**
+
 ```
-~- From Within The BabySploit Directory -!
 sudo apt-get update
 sudo apt-get upgrade
-sudo python3 install.py
-virtualenv babysploit
-source babysploit/bin/activate
-pip3 install -r requirements.txt
-python3 start.py
-
-!- To Leave The Virtual Environment -!
-
-deactivate
+sudo apt-get install exploitdb netcat nmap perl php7.0 
+pip3 install babysploit
 ```
 
 Docker command
