@@ -39,6 +39,9 @@ After cloning the installation you must install some pre-requisites. **If you ar
 
 
 ## Using Pip
+<p align="center">
+  <a href="https://pypi.org/project/babysploit/"><img src="https://image.prntscr.com/image/tQEwhRZ5RcSWRbuC9M1Mcg.png" alt="pypi"></a>
+</p>
 ```
 sudo apt-get update
 sudo apt-get upgrade
