@@ -46,6 +46,8 @@ sudo apt-get install exploitdb netcat nmap perl php7.0
 pip3 install babysploit
 ```
 
+In order to use `search` command you must follow steps [here](https://www.exploit-db.com/searchsploit/#install) to install the searchsploit binary!
+
 Docker command
 
 ```
