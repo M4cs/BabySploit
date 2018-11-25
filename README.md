@@ -59,7 +59,6 @@ babysploit
 docker run --rm -idt --name babysploit xshuden/babysploit    # container is deleted when you're done
 OR
 docker run -idt --name babysploit xshuden/babysploit
-
 ```
 
 # Changelog:
