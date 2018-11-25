@@ -1,9 +1,4 @@
 # BabySploit
-[![GitHub forks](https://img.shields.io/github/forks/M4cs/BabySploit.svg)](https://github.com/M4cs/BabySploit/network)
-[![GitHub stars](https://img.shields.io/github/stars/M4cs/BabySploit.svg)](https://github.com/M4cs/BabySploit/stargazers)
-[![GitHub license](https://img.shields.io/github/license/M4cs/BabySploit.svg)](https://github.com/M4cs/BabySploit/blob/master/LICENSE.md)
-[![GitHub issues](https://img.shields.io/github/issues/M4cs/BabySploit.svg)](https://github.com/M4cs/BabySploit/issues)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/M4cs/BabySploit.svg?style=popout)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FM4cs%2FBabySploit)
 
 # Features (Current, In The Works, Planned):
 
@@ -14,7 +9,7 @@
   - Phishing
   - Cryptography/Stenography
  
-### Information Gathering:
+###Information Gathering:
 
   - Nmap
   - IP Info
@@ -23,28 +18,28 @@
   - Censys Lookup
   - DNS Lookup
   
-### Exploitation:
+###Exploitation:
   
   - Searchsploit
   - ReverseShell Wizard
 
-### Post Exploitation:
+###Post Exploitation:
 
   - In The Works
   
-### Bruteforcing:
+###Bruteforcing:
 
   - FTP Bruteforcer
   
-### Phishing:
+###Phishing:
 
   - BlackEye Python
   
-### Crypto/Stegano:
+###Crypto/Stegano:
 
   - MetaKiller
   
-# Contributing
+#Contributing
 
 Feel free to contribute by making plugins or fixing bugs with a Pull Request. All contributions are helpful and will help make this a great tool.
 
