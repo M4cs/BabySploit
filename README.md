@@ -31,9 +31,6 @@ from any experience level will find use out of BabySploit. Below are some screen
 # Installation Instructions:
 
 ## Using Pip
-<p align="center">
-  <a href="https://pypi.org/project/babysploit/"><img src="https://image.prntscr.com/image/tQEwhRZ5RcSWRbuC9M1Mcg.png" alt="pypi"></a>
-</p>
 
 ```
 sudo apt-get update
