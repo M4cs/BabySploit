@@ -3,11 +3,14 @@
 from configparser import ConfigParser
 from . import display, configuration, dnslookup, helper, iplookup, ftpv, nmtool, reverseshell, searchsploit, blackeye, ftpbruteforce, wpseku, cloudflarebypass
 from pyfiglet import Figlet
+from fabulous import image
 import os, subprocess
 
 try:
     # Clear Terminal #
     os.system("clear")
+    # Display BabyRage xD #
+    print(image.Image('img/Babyrage.png'))
     # Display Welcome Message #
     display.welcome()
     # Check For Configuration File/Create New Configuration File #
