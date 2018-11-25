@@ -30,15 +30,6 @@ from any experience level will find use out of BabySploit. Below are some screen
 
 # Installation Instructions:
 
-BabySploit is best run out of the home directory so to clone it there run:
-```
-git clone git://github.com/M4cs/BabySploit ~/BabySploit
-cd ~/BabySploit
-```
-
-After cloning the installation you must install some pre-requisites. **If you are on Kali you should already have all of these installed but it doesn't hurt to do so anyways just in case**. Do so by running the following:
-
-
 ## Using Pip
 <p align="center">
   <a href="https://pypi.org/project/babysploit/"><img src="https://image.prntscr.com/image/tQEwhRZ5RcSWRbuC9M1Mcg.png" alt="pypi"></a>
