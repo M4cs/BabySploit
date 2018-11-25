@@ -5,3 +5,4 @@ babysploit/wpseku/modules/__pycache__/
 babysploit/wpseku/lib/__pycache__/
 build/
 dist/
+babysploit.egg-info/

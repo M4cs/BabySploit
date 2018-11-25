@@ -1,16 +1,15 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 
-import sys
+import sys, requests
 from setuptools import setup, find_packages
 
-with open('README.md') as f:
+with open('PYPIREADME.md', encoding='utf-8') as f:
     long_description = f.read()
 long_description += '\n\n'
 
 setup(
     name='babysploit',
-    version='1.1.11',
+    version='1.1.13',
     author='Max Bridgland',
     author_email='mabridgland@protonmail.com',
     description='Beginner Pentesting Toolkit/Framework',
