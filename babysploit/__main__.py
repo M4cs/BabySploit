@@ -10,7 +10,7 @@ try:
     # Clear Terminal #
     os.system("clear")
     # Display BabyRage xD #
-    print(image.Image('img/Babyrage.png'))
+    print(image.Image('Babyrage.png'))
     # Display Welcome Message #
     display.welcome()
     # Check For Configuration File/Create New Configuration File #
