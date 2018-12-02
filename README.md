@@ -62,52 +62,6 @@ OR
 docker run -idt --name babysploit xshuden/babysploit
 ```
 
-# Changelog:
-
-## Types of Updates:
-  - Updates: Framework has been updated with new features or major fixes.
-  - Releases: Stable release milestone.
-  - Hotfix: Quick hotfix. Minor bug fix or minor change.
-
-#### 0.1.11 Hotfix:
-  - Fix nmap logging
-#### 0.1.10 Hotfix:
-  - Bug Fixes
-#### 0.1.9 Hotfix:
-  - Fix Installer
-  - Fix Updater
-#### 0.1.8 Update:
-  - Switch To Virtual Env Installation
-#### 0.1.7 Update:
-  - Added Installer Script
-  - Fixed Updater
-#### 0.1.6 Update:
-  - Added Cloudflare Bypasser
-  - Added WPSeku WP Vuln Scan
-#### 0.1.4 & 0.1.5 Hotfixes:
-  - Fix updater
-#### 0.1.3 Hotfix:
-  - Fix Method of grabbing default gateway
-#### 0.1.2 Hotfix:
-  - Bug fixes
-#### 0.1.1 Hotfix:
-  - Fix Requirements.txt
-#### 0.1.0 Release:
-  - Basic Release
-#### 0.0.9 Hotfix:
-  - Fix Updater
-#### 0.0.8 Update:
-  - Fix Updater
-  - Add Raccoon Vuln Scan
-  - Fix PDFMeta
-  - Update Display
-#### 0.0.7 Hotfix:
-  - Fix some bugs
-#### 0.0.6 Update:
-  - Fix updater script
-  - Remove tcpdump
-  - Add ftpvulnscan and pdfmeta
-
 # Getting Started:
 
 #### Setting Configuration Values:
