@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://pepy.tech/project/babysploit"><img src="https://pepy.tech/badge/babysploit/week"></a>
   <a href="https://pepy.tech/project/babysploit"><img src="https://pepy.tech/badge/babysploit/month"></a>
-  <a href="https://pepy.tech/project/babysploit"><img src="https://pepy.tech/badge/babysploit/all"></a></br>
+  <a href="https://pepy.tech/project/babysploit"><img src="https://pepy.tech/badge/babysploit/"></a></br>
   <a href="https://github.com/M4cs/BabySploit/network"><img src="https://img.shields.io/github/forks/M4cs/BabySploit.svg" alt="Forks"></a>
   <a href="https://github.com/M4cs/BabySploit/stargazers"><img src="https://img.shields.io/github/stars/M4cs/BabySploit.svg" atl="Stars"></a>
   <a href="https://github.com/M4cs/BabySploit/issues"><img src="https://img.shields.io/github/issues/M4cs/BabySploit.svg" alt="Issues"></a>
