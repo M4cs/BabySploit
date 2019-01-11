@@ -7,7 +7,10 @@ import os, subprocess
 
 try:
     # Clear Terminal #
-    os.system("clear")
+    if os.name == "nt":
+        os.system("cls")
+    else:
+        os.system("clear")
     # Display Welcome Message #
     display.welcome()
     # Check For Configuration File/Create New Configuration File #
