@@ -6,19 +6,21 @@ def firstTimeSetup(plat):
     try:
         if plat == "Linux":
             home = os.path.expanduser("~")
-            configpath = home + 'BabySploit/configuration/'
-            os.mkdir(configpath)
+            configpath = home + '/BabySploit'
+            os.system('mkdir ' + configpath)
+            os.system('mkdir ' + configpath + '/configuration')
         elif plat == "Darwin":
             home = os.path.expanduser("~")
-            configpath = home + 'BabySploit/configuration/'
-            os.mkdir(configpath)
+            configpath = home + '/BabySploit/configuration'
+            os.system('mkdir ' + configpath)
         elif plat == "Windows":
             home = os.path.expanduser("~")
             configpath = home + "/BabySploit/configuration/"
             os.mkdir(configpath)
             createuser(configpath)
-    except:
+    except Exception as e:
         print('Error: Unable to setup configuration path! Try running this in sudo for the first time setup.')
+        print(e)
         exit()
         
 def createuser(configpath):
@@ -36,13 +38,13 @@ def createuser(configpath):
     }
     config['DEFAULT']['platform'] = "%s %s" % (system, release)
     if platform.system() == "Linux":
-        with open(configpath, "w") as configfile:
+        with open(configpath + 'config.cfg', "w") as configfile:
             config.write(configfile)
     elif platform.system() == "MacOS":
-        with open(configpath, "w") as configfile:
+        with open(configpath + 'config.cfg', "w") as configfile:
             config.write(configfile)
     elif platform.system() == "Windows":
-        with open(configpath, "w") as configfile:
+        with open(configpath + 'config.cfg', "w") as configfile:
             config.write(configfile)
 
 def checkuser():
@@ -57,7 +59,7 @@ def checkuser():
     elif platform.system() == "Darwin":
         home = os.path.expanduser("~")
         configpath = home + "/BabySploit/configuration"
-        if os.path.exists(configpath) == True:
+        if os.path.exists(str(configpath)) == True:
             print("            [i] Loaded Configuration... [i]\n\n")
         else:
             firstTimeSetup(platform.system())
@@ -65,7 +67,7 @@ def checkuser():
     elif platform.system() == "Windows":
         home = os.path.expanduser("~")
         configpath = home + "/BabySploit/configuration"
-        if os.path.exists(configpath) == True:
+        if os.path.exists(str(configpath)) == True:
             print("            [i] Loaded Configuration... [i]\n\n")
         else:
             firstTimeSetup(platform.system())

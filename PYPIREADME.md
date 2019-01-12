@@ -1,6 +1,6 @@
-# BabySploit
+BabySploit
 
-# Features (Current, In The Works, Planned):
+Features (Current, In The Works, Planned):
 
   - Information Gathering
   - Exploitation
@@ -9,7 +9,7 @@
   - Phishing
   - Cryptography/Stenography
  
-###Information Gathering:
+Information Gathering:
 
   - Nmap
   - IP Info
@@ -18,28 +18,28 @@
   - Censys Lookup
   - DNS Lookup
   
-###Exploitation:
+Exploitation:
   
   - Searchsploit
   - ReverseShell Wizard
 
-###Post Exploitation:
+Post Exploitation:
 
   - In The Works
   
-###Bruteforcing:
+Bruteforcing:
 
   - FTP Bruteforcer
   
-###Phishing:
+Phishing:
 
   - BlackEye Python
   
-###Crypto/Stegano:
+Crypto/Stegano:
 
   - MetaKiller
   
-#Contributing
+Contributing
 
 Feel free to contribute by making plugins or fixing bugs with a Pull Request. All contributions are helpful and will help make this a great tool.
 
