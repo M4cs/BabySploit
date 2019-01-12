@@ -1,8 +1,10 @@
 def run():
+    import os
     from configparser import ConfigParser
     from socket import gethostbyname, error
     config = ConfigParser()
-    config.read("config.cfg")
+    path = str(os.path.expanduser('~')) + "/config.cfg"
+    config.read(path)
     rhost = config['DEFAULT']['rhost']
     print("\n[!] Confirm Target: [!]")
     print("Target: %s" % rhost)

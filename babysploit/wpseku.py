@@ -1,8 +1,10 @@
+import os
 def run():
     global rhost 
     from configparser import ConfigParser
     config = ConfigParser()
-    config.read("./config.cfg")
+    path = str(os.path.expanduser('~')) + "/config.cfg"
+    config.read(path)
     print("== Current Configuration: ==")
     print("Target: %s" % config['DEFAULT']['rhost'])
     print("[?] Is this configuration correct? [?]")
@@ -40,7 +42,8 @@ def bruteforce():
     import os
     from configparser import ConfigParser
     config = ConfigParser()
-    config.read("./config.cfg")
+    path = str(os.path.expanduser('~')) + "/config.cfg"
+    config.read(path)
     print("[?] Would you like to use the directory in your config for the wordlist or a custom filepath? [?]")
     print("[i] Current Config: %s [i]" % config['DEFAULT']['passwordlist'])
     ask = str(input("[config | custom] ").lower())

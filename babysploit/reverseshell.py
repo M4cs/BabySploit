@@ -3,7 +3,8 @@ try:
         import os
         from configparser import ConfigParser
         config = ConfigParser()
-        config.read("./config.cfg")
+        path = str(os.path.expanduser('~')) + "/config.cfg"
+        config.read(path)
         print("""
     Available Reverse Shells:
 

@@ -35,9 +35,11 @@ def bruteforce(target, username, wordlist):
 
 def start():
     from configparser import ConfigParser
+    import os
     global wordlist, target, username
     config = ConfigParser()
-    config.read("./config.cfg")
+    path = str(os.path.expanduser('~'))() + "/config.cfg"
+    config.read(path)
     target = config['DEFAULT']['rhost']
     wordlist = input("Enter Path To Password List: ")
     username = input("Enter Username to Attempt To Connect Under: ")

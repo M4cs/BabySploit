@@ -25,7 +25,8 @@ try:
     helper.run()
     # Load Config #
     config = ConfigParser()
-    config.read("./config.cfg")
+    path = str(os.path.expanduser('~')) + "/config.cfg"
+    config.read(path)
     # Create Terminal/Input #
     def main():
         terminal = input("\n[babysploit]> ") # Define the name of the terminal
@@ -52,7 +53,7 @@ try:
         elif terminal[0:3] == "set": # Set Config Key
             if terminal[4:] == terminal[4:]: # Take Input After `set ` 
                 config['DEFAULT'][terminal[4:]] = input("Enter Value For %s: " % terminal[4:]) # Get Value for that key name
-                with open("./config.cfg", "w") as configfile:
+                with open(path, "w") as configfile:
                     config.write(configfile) # Write the new config key
                 print("Config Key Saved!")
                 main()
@@ -67,7 +68,7 @@ try:
                 'passwordlist': 'lists/passwords',
                 'urlpath': '/connect'
             }
-            with open("./config.cfg", "w") as configfile:
+            with open(path, "w") as configfile:
                 config.write(configfile)
             main()
         elif terminal[0:4] == "exit":
