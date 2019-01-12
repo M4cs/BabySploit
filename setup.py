@@ -9,7 +9,7 @@ long_description += '\n\n'
 
 setup(
     name='babysploit',
-    version='1.1.19',
+    version='1.2',
     author='Max Bridgland',
     author_email='mabridgland@protonmail.com',
     description='Beginner Pentesting Toolkit/Framework',
