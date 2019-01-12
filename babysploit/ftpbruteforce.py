@@ -38,7 +38,7 @@ def start():
     import os
     global wordlist, target, username
     config = ConfigParser()
-    path = str(os.path.expanduser('~'))() + "/config.cfg"
+    path = str(os.path.expanduser('~')) + "/config.cfg"
     config.read(path)
     target = config['DEFAULT']['rhost']
     wordlist = input("Enter Path To Password List: ")
