@@ -1,12 +1,11 @@
 def welcome():
-    from netifaces import gateways, AF_INET
+    import socket
     banner = """
                      BabySploit!
               Developed by @maxbridgland
           https://github.com/M4cs/BabySploit
         """
-    gateways = gateways()
-    gw = gateways['default'][AF_INET][0]
+    gw = socket.gethostname()
     print("          [i] Default Gateway: %s [i]" % gw)
     print(banner)
     print("")
