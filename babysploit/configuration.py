@@ -12,7 +12,7 @@ def firstTimeSetup(plat):
         elif plat == "Darwin":
             home = os.path.expanduser("~")
             configpath = home + '/BabySploit/configuration'
-            os.system('mkdir ' + configpath)
+            os.system('mkdir -p ' + configpath)
         elif plat == "Windows":
             home = os.path.expanduser("~")
             configpath = home + "/BabySploit/configuration/"
