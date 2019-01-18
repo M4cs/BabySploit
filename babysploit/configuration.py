@@ -16,7 +16,7 @@ def firstTimeSetup(plat):
         elif plat == "Windows":
             home = os.path.expanduser("~")
             configpath = home + "/BabySploit/configuration/"
-            os.mkdir(configpath)
+            os.makedirs(configpath)
             createuser(configpath)
     except Exception as e:
         print('Error: Unable to setup configuration path! Try running this in sudo for the first time setup.')
