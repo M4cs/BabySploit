@@ -1,6 +1,11 @@
+import os
+import sys
+import time
+
+from pyfiglet import Figlet
+
+
 def run():
-    from pyfiglet import Figlet
-    import os
     f = Figlet(font='slant')
     f.renderText("Tutorial")
     start = """
@@ -16,7 +21,7 @@ it shouldn't be too hard to get the hang of things.
     second = """
 What is BabySploit?
 
-BabySploit is a penetration testing/social engineering 
+BabySploit is a penetration testing/social engineering
 framework aimed towards beginners in the field. Any person,
 with any amount of experience may find use out of BabySploit.
 The framework comes equipped with different types of tools
@@ -31,8 +36,8 @@ easily for the end user. That is the main goal of BabySploit
     animated(second)
     input("Press Enter To Continue...")
 
+
 def animated(msg):
-    import sys, time
     for char in msg:
         time.sleep(0.1)
         sys.stdout.write(char)

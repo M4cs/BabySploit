@@ -1,7 +1,10 @@
 import os
+
+from configparser import ConfigParser
+
+
 def run():
-    global rhost 
-    from configparser import ConfigParser
+    global rhost
     config = ConfigParser()
     path = str(os.path.expanduser('~')) + "/config.cfg"
     config.read(path)
@@ -16,6 +19,7 @@ def run():
         rhost = str(input("> "))
     choose()
 
+
 def choose():
     print("[?] What type of scan would you like to perform: [?]")
     ask = str(input("[bruteforce login | generic scan | wp plugin] ").lower())
@@ -29,8 +33,8 @@ def choose():
         print("\n[!] Error: Unknown Scan Type! [!]")
         choose()
 
+
 def pluginscan():
-    import os
     print("[!] Confirm Settings [!]")
     print("[i] Target: %s [i]" % rhost)
     input("Press ENTER To Start Scan")
@@ -38,13 +42,13 @@ def pluginscan():
     os.system("python3 wpseku/wpseku.py --scan tmp/temp.php --verbose")
     os.system("rm tmp/temp.php")
 
+
 def bruteforce():
-    import os
-    from configparser import ConfigParser
     config = ConfigParser()
     path = str(os.path.expanduser('~')) + "/config.cfg"
     config.read(path)
-    print("[?] Would you like to use the directory in your config for the wordlist or a custom filepath? [?]")
+    print("[?] Would you like to use the directory in your config for the "
+          "wordlist or a custom filepath? [?]")
     print("[i] Current Config: %s [i]" % config['DEFAULT']['passwordlist'])
     ask = str(input("[config | custom] ").lower())
     if ask == "config":
@@ -66,10 +70,11 @@ def bruteforce():
     print("Username: %s" % username)
     print("Scan Type: Brute Force")
     input("Press ENTER To Confirm")
-    os.system("python3 wpseku/wpseku.py --url %s --brute --user %s --wordlist %s --verbose" % (rhost, username, wordlist))
+    os.system("python3 wpseku/wpseku.py --url %s --brute --user %s --wordlist %s --verbose" %
+              (rhost, username, wordlist))
+
 
 def generic():
-    import os
     print("[!] Confirm Settings [!]")
     print("Target: %s" % rhost)
     print("Scan Type: Generic")

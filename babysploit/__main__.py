@@ -48,7 +48,7 @@ try:
             display.tools()
             main()
         elif terminal[0:6] == "search":
-            searchsploit.search()
+            searchsploit.do_search()
             main()
         elif terminal[0:3] == "set": # Set Config Key
             if terminal[4:] == terminal[4:]: # Take Input After `set ` 

@@ -1,38 +1,46 @@
-def platformcheck():
-    import os
-    from pyfiglet import Figlet
-    if os.path.exists("/usr/share/exploitdb") == True:
-            f = Figlet(font='slant')
-            print(f.renderText("     Search"))
-            q1 = input("Platform [Windows, Linux, MacOS, PHP, All]: ").lower()
-            if q1 == "windows":
-                platform = "windows"
-            elif q1 == "linux":
-                platform = "linux"
-            elif q1 == "macos":
-                platform = "macos"
-            elif q1 == "all":
-                platform = ""
-            elif q1 == "php":
-                platform = "php"
-            return platform
-    else:
-        print("[!] Couldn't find explpoit database. Try running install.py again. [!]")
+import os
+import subprocess
+import json
 
-def search():
-    import subprocess
-    import os
-    import json
-    platform = platformcheck()
+from pyfiglet import Figlet
+from babysploit.utils import get_terminal_width
+
+
+def platform_check():
+    if not os.path.exists("/usr/share/exploitdb"):
+        print("[!] Couldn't find exploit database. Try running install.py again. [!]")
+        return
+
+    f = Figlet(font='slant')
+    print(f.renderText("     Search"))
+    supported_platforms = ['windows', 'linux', 'macos', 'php']
+    message = "Platform [{}, all]: ".format(",".join(supported_platforms))
+    q1 = input(message).lower()
+    if q1 == 'all':
+        return ""
+    elif q1 in supported_platforms:
+        return q1
+    else:
+        print("[!] Unknown platform '{}'. Use 'all'".format(q1))
+        return ""
+
+
+def do_search():
+    platform = platform_check()
     search = platform + " " + input("Search: ")
     print("Running Search..")
-    q = subprocess.check_output("searchsploit -j %s" % search, shell=True)
+    q = subprocess.check_output("searchsploit -j {}".format(search), shell=True)
     resp = json.loads(q)
+
+    term_width = get_terminal_width()
     print("=" * 46 + " Result " + "=" * 46)
+    hl = '-' * term_width
+
     for exploit in resp['RESULTS_EXPLOIT']:
-        print('-' * 100)
-        print("Title: %s" % exploit['Title'])
-        print("Platform: %s" % exploit['Platform'])
-        print("Path: %s" % exploit['Path'])
-        print("Author: %s" % exploit['Author'])
-    print("=" * 100)
+        print(hl)
+        message = ("Title: {Title}"
+                   "Platform: {Platform}"
+                   "Path: {Path}"
+                   "Author: {Author}").format(**exploit)
+        print(message)
+    print("=" * term_width)
