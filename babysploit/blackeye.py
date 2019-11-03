@@ -23,7 +23,7 @@ def run():
     try:
         print("""
     Credit to @thelinuxchoice for BlackEye's base sites.
-                        Availble Templates
+                        Available Templates
 
     [1] Instagram          [2] Facebook            [3] Snapchat
     [4] Twitter            [5] GitHub              [6] Google
