@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='babysploit',
-    version='1.4.4',
+    version='1.5',
     author='Max Bridgland',
     author_email='mabridgland@protonmail.com',
     description='Beginner Pentesting Toolkit/Framework',
