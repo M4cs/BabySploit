@@ -14,7 +14,7 @@
   <a href="https://discord.gg/C7jgQeN"><img src="https://img.shields.io/badge/discord-join-blue.svg?syle=popout"></a>
 
 <p align="center">
-  <b>Made For Kali Linux. No Support For Other Distros If There Are Problems.</b>
+  <b>Made For Kali Linux. No Support For Other Distros If There Are Problems. Tested and Working on MacOS for most Tools.</b>
   </br><a href="https://twitter.com/maxbridgland" alt="Twitter Link"><b>Developed by @maxbridgland</b></a></br>
   <a href="https://bit.ly/2Ke9uVi">Donate</a>
 </p>
