@@ -7,7 +7,7 @@ from babysploit.utils import get_terminal_width
 
 
 def platform_check():
-    if not os.path.exists("/usr/share/exploitdb"):
+    if not os.path.exists("/usr/share/exploitdb") or not os.path.exists("/usr/local/share/exploitdb"):
         print("[!] Couldn't find exploit database. Try running install.py again. [!]")
         return
 
@@ -27,6 +27,8 @@ def platform_check():
 
 def do_search():
     platform = platform_check()
+    if not platform:
+        return
     search = platform + " " + input("Search: ")
     print("Running Search..")
     q = subprocess.check_output("searchsploit -j {}".format(search), shell=True)
