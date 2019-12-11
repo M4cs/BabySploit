@@ -35,6 +35,10 @@ from any experience level will find use out of BabySploit. Below are some screen
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install exploitdb netcat nmap perl php7.0 
+
+# on macOS
+brew install exploitdb netcat nmap perl
+
 pip3 install babysploit
 babysploit
 ```
@@ -46,6 +50,10 @@ In order to use `search` command you must follow steps [here](https://www.exploi
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install exploitdb netcat nmap perl php7.0
+
+# on macOS
+brew install exploitdb netcat nmap perl
+
 git clone https://github.com/M4cs/BabySploit.git
 cd BabySploit/
 python3 setup.py install
